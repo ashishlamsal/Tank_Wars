@@ -1,0 +1,139 @@
+\hypertarget{classprojectile}{}\doxysection{projectile Class Reference}
+\label{classprojectile}\index{projectile@{projectile}}
+
+
+{\ttfamily \#include $<$projectile.\+h$>$}
+
+Inheritance diagram for projectile\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classprojectile}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classprojectile_aa535f033c86eb01c5d80f6a5a71a1724}{is\+\_\+initialized}} ()
+\item 
+bool \mbox{\hyperlink{classprojectile_a943e61be108d19cb76d683d0ffd38f96}{is\+\_\+in\+\_\+bound}} ()
+\item 
+virtual std\+::vector$<$ sf\+::\+Vector2f $>$ \mbox{\hyperlink{classprojectile_ad3613669ac451973d602a1c65668d14d}{getpos}} ()=0
+\item 
+\mbox{\hyperlink{classprojectile_a7354ca1daaaef6fd1ed0ab62ca3bf9c1}{projectile}} ()
+\item 
+virtual void \mbox{\hyperlink{classprojectile_a8145ff29ab7091665336eb93c1da44c1}{init}} (sf\+::\+Vector2f pos, sf\+::\+Vector2f vel, sf\+::\+Vector2f accln, float blast\+\_\+r, float dmg, int no=1)=0
+\item 
+virtual void \mbox{\hyperlink{classprojectile_a30f2e3ba9668ed43f03dbb975cc3603e}{draw}} (sf\+::\+Render\+Window \&window)=0
+\item 
+virtual void \mbox{\hyperlink{classprojectile_a94c39cd8b4b2228b3ece9aae03830ea3}{make}} (float dt, float multiplier, \mbox{\hyperlink{classterrain}{terrain}} \&t, \mbox{\hyperlink{class_tank}{Tank}} \&tank, \mbox{\hyperlink{class_tank}{Tank}} \&tank1)=0
+\item 
+bool \mbox{\hyperlink{classprojectile_aa8151e1f002fbb9da60da4ec97ff79bd}{is\+\_\+done}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classprojectile_a3ae1aad91d6ecef971e4376f34378dc0}{initialized}}
+\item 
+bool \mbox{\hyperlink{classprojectile_ae97d1abb6762588897daa9b4f884ade8}{in\+\_\+bound}}
+\item 
+bool \mbox{\hyperlink{classprojectile_a5235c7477bb7443bd56f07ab8e85067f}{done}} =false
+\item 
+float \mbox{\hyperlink{classprojectile_a17789b981ec1a111558c040351855f8c}{damage}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classprojectile_a7354ca1daaaef6fd1ed0ab62ca3bf9c1}\label{classprojectile_a7354ca1daaaef6fd1ed0ab62ca3bf9c1}} 
+\index{projectile@{projectile}!projectile@{projectile}}
+\index{projectile@{projectile}!projectile@{projectile}}
+\doxysubsubsection{\texorpdfstring{projectile()}{projectile()}}
+{\footnotesize\ttfamily projectile\+::projectile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classprojectile_a30f2e3ba9668ed43f03dbb975cc3603e}\label{classprojectile_a30f2e3ba9668ed43f03dbb975cc3603e}} 
+\index{projectile@{projectile}!draw@{draw}}
+\index{draw@{draw}!projectile@{projectile}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void projectile\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classscatter_a93763e4507d0303a0bf102a62a35cf2a}{scatter}}, and \mbox{\hyperlink{classshot_adf6a8d3bf9ab10e92503afdb0c62ee0d}{shot}}.
+
+\mbox{\Hypertarget{classprojectile_ad3613669ac451973d602a1c65668d14d}\label{classprojectile_ad3613669ac451973d602a1c65668d14d}} 
+\index{projectile@{projectile}!getpos@{getpos}}
+\index{getpos@{getpos}!projectile@{projectile}}
+\doxysubsubsection{\texorpdfstring{getpos()}{getpos()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$sf\+::\+Vector2f$>$ projectile\+::getpos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classscatter_ab790507d054853319d6e97b9aede7424}{scatter}}, and \mbox{\hyperlink{classshot_aa7ddc21c09c0d5f9dcbb3891e6a2f8a1}{shot}}.
+
+\mbox{\Hypertarget{classprojectile_a8145ff29ab7091665336eb93c1da44c1}\label{classprojectile_a8145ff29ab7091665336eb93c1da44c1}} 
+\index{projectile@{projectile}!init@{init}}
+\index{init@{init}!projectile@{projectile}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily virtual void projectile\+::init (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{pos,  }\item[{sf\+::\+Vector2f}]{vel,  }\item[{sf\+::\+Vector2f}]{accln,  }\item[{float}]{blast\+\_\+r,  }\item[{float}]{dmg,  }\item[{int}]{no = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classscatter_ac33fb373ed613b4df2c5af4373bbe600}{scatter}}, and \mbox{\hyperlink{classshot_a350833e33f4ff6005c4a5cccf148345d}{shot}}.
+
+\mbox{\Hypertarget{classprojectile_aa8151e1f002fbb9da60da4ec97ff79bd}\label{classprojectile_aa8151e1f002fbb9da60da4ec97ff79bd}} 
+\index{projectile@{projectile}!is\_done@{is\_done}}
+\index{is\_done@{is\_done}!projectile@{projectile}}
+\doxysubsubsection{\texorpdfstring{is\_done()}{is\_done()}}
+{\footnotesize\ttfamily bool projectile\+::is\+\_\+done (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classprojectile_a943e61be108d19cb76d683d0ffd38f96}\label{classprojectile_a943e61be108d19cb76d683d0ffd38f96}} 
+\index{projectile@{projectile}!is\_in\_bound@{is\_in\_bound}}
+\index{is\_in\_bound@{is\_in\_bound}!projectile@{projectile}}
+\doxysubsubsection{\texorpdfstring{is\_in\_bound()}{is\_in\_bound()}}
+{\footnotesize\ttfamily bool projectile\+::is\+\_\+in\+\_\+bound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classprojectile_aa535f033c86eb01c5d80f6a5a71a1724}\label{classprojectile_aa535f033c86eb01c5d80f6a5a71a1724}} 
+\index{projectile@{projectile}!is\_initialized@{is\_initialized}}
+\index{is\_initialized@{is\_initialized}!projectile@{projectile}}
+\doxysubsubsection{\texorpdfstring{is\_initialized()}{is\_initialized()}}
+{\footnotesize\ttfamily bool projectile\+::is\+\_\+initialized (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classprojectile_a94c39cd8b4b2228b3ece9aae03830ea3}\label{classprojectile_a94c39cd8b4b2228b3ece9aae03830ea3}} 
+\index{projectile@{projectile}!make@{make}}
+\index{make@{make}!projectile@{projectile}}
+\doxysubsubsection{\texorpdfstring{make()}{make()}}
+{\footnotesize\ttfamily virtual void projectile\+::make (\begin{DoxyParamCaption}\item[{float}]{dt,  }\item[{float}]{multiplier,  }\item[{\mbox{\hyperlink{classterrain}{terrain}} \&}]{t,  }\item[{\mbox{\hyperlink{class_tank}{Tank}} \&}]{tank,  }\item[{\mbox{\hyperlink{class_tank}{Tank}} \&}]{tank1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classscatter_af6bc5e6bb550b5f54286ee27ca2f0455}{scatter}}, and \mbox{\hyperlink{classshot_ad687d7ee95392f1cd76e4167a0e55780}{shot}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classprojectile_a17789b981ec1a111558c040351855f8c}\label{classprojectile_a17789b981ec1a111558c040351855f8c}} 
+\index{projectile@{projectile}!damage@{damage}}
+\index{damage@{damage}!projectile@{projectile}}
+\doxysubsubsection{\texorpdfstring{damage}{damage}}
+{\footnotesize\ttfamily float projectile\+::damage\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classprojectile_a5235c7477bb7443bd56f07ab8e85067f}\label{classprojectile_a5235c7477bb7443bd56f07ab8e85067f}} 
+\index{projectile@{projectile}!done@{done}}
+\index{done@{done}!projectile@{projectile}}
+\doxysubsubsection{\texorpdfstring{done}{done}}
+{\footnotesize\ttfamily bool projectile\+::done =false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classprojectile_ae97d1abb6762588897daa9b4f884ade8}\label{classprojectile_ae97d1abb6762588897daa9b4f884ade8}} 
+\index{projectile@{projectile}!in\_bound@{in\_bound}}
+\index{in\_bound@{in\_bound}!projectile@{projectile}}
+\doxysubsubsection{\texorpdfstring{in\_bound}{in\_bound}}
+{\footnotesize\ttfamily bool projectile\+::in\+\_\+bound\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classprojectile_a3ae1aad91d6ecef971e4376f34378dc0}\label{classprojectile_a3ae1aad91d6ecef971e4376f34378dc0}} 
+\index{projectile@{projectile}!initialized@{initialized}}
+\index{initialized@{initialized}!projectile@{projectile}}
+\doxysubsubsection{\texorpdfstring{initialized}{initialized}}
+{\footnotesize\ttfamily bool projectile\+::initialized\hspace{0.3cm}{\ttfamily [protected]}}
+

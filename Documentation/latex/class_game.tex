@@ -1,0 +1,125 @@
+\hypertarget{class_game}{}\doxysection{Game Class Reference}
+\label{class_game}\index{Game@{Game}}
+
+
+{\ttfamily \#include $<$Game.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_game_a6845e5a328f103bd46a3fc147a71ae05}{make}} (float dt)
+\item 
+void \mbox{\hyperlink{class_game_af145d292afe50b7ed11422be89d5cce6}{draw}} (sf\+::\+Render\+Window \&window)
+\item 
+\mbox{\hyperlink{class_game_aeee0d4ab6b8a9e806872f3a6b7517f4f}{Game}} (sf\+::\+Render\+Window \&window, \mbox{\hyperlink{_resource_identifiers_8h_a16a22d6e4ca029320bcfcb1cf85bb7fd}{texture\+Manager}} \&textures)
+\item 
+\mbox{\hyperlink{class_player}{Player}} $\ast$ \mbox{\hyperlink{class_game_aa5c2c4c09a259a2ab836d36a899105b9}{get\+Player1}} ()
+\item 
+\mbox{\hyperlink{class_player}{Player}} $\ast$ \mbox{\hyperlink{class_game_ac820a4ce2e3546494411dace7aea736a}{get\+Player2}} ()
+\item 
+sf\+::\+Clock $\ast$ \mbox{\hyperlink{class_game_ad0829cde1b280b4bec22294f4b03b4b0}{get\+\_\+game\+\_\+timing}} ()
+\item 
+void \mbox{\hyperlink{class_game_a97fafb574d34e593d194a055f3cf3312}{set\+\_\+game\+\_\+timing}} ()
+\item 
+void \mbox{\hyperlink{class_game_a61f5f440a6ec161e32278665e698eba5}{respawn\+\_\+selected\+\_\+player}} ()
+\item 
+void \mbox{\hyperlink{class_game_a6f634b79fc5684aa31171fe44cc9d570}{fire\+\_\+selected\+\_\+player}} ()
+\item 
+void \mbox{\hyperlink{class_game_a7ee6cd62b847a2de8b3a89b9421b8a4a}{change\+\_\+selected\+\_\+player}} ()
+\item 
+std\+::vector$<$ unsigned int $>$ \mbox{\hyperlink{class_game_a673219f937989636fa26b8aa2d097e8c}{get\+\_\+values}} (int octaves, double persistance, double scale, int llim, int ulim, double x, double yy)
+\item 
+\mbox{\hyperlink{class_game_ae3d112ca6e0e55150d2fdbc704474530}{$\sim$\+Game}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player}{Player}} $\ast$ \mbox{\hyperlink{class_game_a5e72dc860c43ca30d81edc51f1860b64}{selected\+\_\+player}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_aeee0d4ab6b8a9e806872f3a6b7517f4f}\label{class_game_aeee0d4ab6b8a9e806872f3a6b7517f4f}} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{\mbox{\hyperlink{_resource_identifiers_8h_a16a22d6e4ca029320bcfcb1cf85bb7fd}{texture\+Manager}} \&}]{textures }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_game_ae3d112ca6e0e55150d2fdbc704474530}\label{class_game_ae3d112ca6e0e55150d2fdbc704474530}} 
+\index{Game@{Game}!````~Game@{$\sim$Game}}
+\index{````~Game@{$\sim$Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{$\sim$Game()}{~Game()}}
+{\footnotesize\ttfamily Game\+::$\sim$\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_a7ee6cd62b847a2de8b3a89b9421b8a4a}\label{class_game_a7ee6cd62b847a2de8b3a89b9421b8a4a}} 
+\index{Game@{Game}!change\_selected\_player@{change\_selected\_player}}
+\index{change\_selected\_player@{change\_selected\_player}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{change\_selected\_player()}{change\_selected\_player()}}
+{\footnotesize\ttfamily void Game\+::change\+\_\+selected\+\_\+player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_game_af145d292afe50b7ed11422be89d5cce6}\label{class_game_af145d292afe50b7ed11422be89d5cce6}} 
+\index{Game@{Game}!draw@{draw}}
+\index{draw@{draw}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Game\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_game_a6f634b79fc5684aa31171fe44cc9d570}\label{class_game_a6f634b79fc5684aa31171fe44cc9d570}} 
+\index{Game@{Game}!fire\_selected\_player@{fire\_selected\_player}}
+\index{fire\_selected\_player@{fire\_selected\_player}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{fire\_selected\_player()}{fire\_selected\_player()}}
+{\footnotesize\ttfamily void Game\+::fire\+\_\+selected\+\_\+player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_game_ad0829cde1b280b4bec22294f4b03b4b0}\label{class_game_ad0829cde1b280b4bec22294f4b03b4b0}} 
+\index{Game@{Game}!get\_game\_timing@{get\_game\_timing}}
+\index{get\_game\_timing@{get\_game\_timing}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{get\_game\_timing()}{get\_game\_timing()}}
+{\footnotesize\ttfamily sf\+::\+Clock$\ast$ Game\+::get\+\_\+game\+\_\+timing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_game_a673219f937989636fa26b8aa2d097e8c}\label{class_game_a673219f937989636fa26b8aa2d097e8c}} 
+\index{Game@{Game}!get\_values@{get\_values}}
+\index{get\_values@{get\_values}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{get\_values()}{get\_values()}}
+{\footnotesize\ttfamily std\+::vector$<$ unsigned int $>$ Game\+::get\+\_\+values (\begin{DoxyParamCaption}\item[{int}]{octaves,  }\item[{double}]{persistance,  }\item[{double}]{scale,  }\item[{int}]{llim,  }\item[{int}]{ulim,  }\item[{double}]{x,  }\item[{double}]{yy }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_game_aa5c2c4c09a259a2ab836d36a899105b9}\label{class_game_aa5c2c4c09a259a2ab836d36a899105b9}} 
+\index{Game@{Game}!getPlayer1@{getPlayer1}}
+\index{getPlayer1@{getPlayer1}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getPlayer1()}{getPlayer1()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player}{Player}}$\ast$ Game\+::get\+Player1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_game_ac820a4ce2e3546494411dace7aea736a}\label{class_game_ac820a4ce2e3546494411dace7aea736a}} 
+\index{Game@{Game}!getPlayer2@{getPlayer2}}
+\index{getPlayer2@{getPlayer2}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getPlayer2()}{getPlayer2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player}{Player}}$\ast$ Game\+::get\+Player2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_game_a6845e5a328f103bd46a3fc147a71ae05}\label{class_game_a6845e5a328f103bd46a3fc147a71ae05}} 
+\index{Game@{Game}!make@{make}}
+\index{make@{make}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{make()}{make()}}
+{\footnotesize\ttfamily void Game\+::make (\begin{DoxyParamCaption}\item[{float}]{dt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_game_a61f5f440a6ec161e32278665e698eba5}\label{class_game_a61f5f440a6ec161e32278665e698eba5}} 
+\index{Game@{Game}!respawn\_selected\_player@{respawn\_selected\_player}}
+\index{respawn\_selected\_player@{respawn\_selected\_player}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{respawn\_selected\_player()}{respawn\_selected\_player()}}
+{\footnotesize\ttfamily void Game\+::respawn\+\_\+selected\+\_\+player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_game_a97fafb574d34e593d194a055f3cf3312}\label{class_game_a97fafb574d34e593d194a055f3cf3312}} 
+\index{Game@{Game}!set\_game\_timing@{set\_game\_timing}}
+\index{set\_game\_timing@{set\_game\_timing}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{set\_game\_timing()}{set\_game\_timing()}}
+{\footnotesize\ttfamily void Game\+::set\+\_\+game\+\_\+timing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game_a5e72dc860c43ca30d81edc51f1860b64}\label{class_game_a5e72dc860c43ca30d81edc51f1860b64}} 
+\index{Game@{Game}!selected\_player@{selected\_player}}
+\index{selected\_player@{selected\_player}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{selected\_player}{selected\_player}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player}{Player}}$\ast$ Game\+::selected\+\_\+player}
+

@@ -1,0 +1,92 @@
+\hypertarget{classshot}{}\doxysection{shot Class Reference}
+\label{classshot}\index{shot@{shot}}
+
+
+{\ttfamily \#include $<$weaponsfile.\+h$>$}
+
+Inheritance diagram for shot\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classshot}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ sf\+::\+Vector2f $>$ \mbox{\hyperlink{classshot_aa7ddc21c09c0d5f9dcbb3891e6a2f8a1}{getpos}} ()
+\item 
+void \mbox{\hyperlink{classshot_a350833e33f4ff6005c4a5cccf148345d}{init}} (sf\+::\+Vector2f pos, sf\+::\+Vector2f vel, sf\+::\+Vector2f accln, float blast\+\_\+r, float dmg, int no=1)
+\item 
+void \mbox{\hyperlink{classshot_adf6a8d3bf9ab10e92503afdb0c62ee0d}{draw}} (sf\+::\+Render\+Window \&window)
+\item 
+void \mbox{\hyperlink{classshot_ad687d7ee95392f1cd76e4167a0e55780}{make}} (float dt, float multiplier, \mbox{\hyperlink{classterrain}{terrain}} \&t, \mbox{\hyperlink{class_tank}{Tank}} \&tank, \mbox{\hyperlink{class_tank}{Tank}} \&tank1)
+\item 
+\mbox{\hyperlink{classshot_a46b074e0d1f54c5c182fbc8863621524}{$\sim$shot}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classshot_a5601e2d9b5b1975244730ed0f9a8c94a}{is\+\_\+powerful}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classshot_a46b074e0d1f54c5c182fbc8863621524}\label{classshot_a46b074e0d1f54c5c182fbc8863621524}} 
+\index{shot@{shot}!````~shot@{$\sim$shot}}
+\index{````~shot@{$\sim$shot}!shot@{shot}}
+\doxysubsubsection{\texorpdfstring{$\sim$shot()}{~shot()}}
+{\footnotesize\ttfamily shot\+::$\sim$shot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classshot_adf6a8d3bf9ab10e92503afdb0c62ee0d}\label{classshot_adf6a8d3bf9ab10e92503afdb0c62ee0d}} 
+\index{shot@{shot}!draw@{draw}}
+\index{draw@{draw}!shot@{shot}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void shot\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classprojectile_a30f2e3ba9668ed43f03dbb975cc3603e}{projectile}}.
+
+\mbox{\Hypertarget{classshot_aa7ddc21c09c0d5f9dcbb3891e6a2f8a1}\label{classshot_aa7ddc21c09c0d5f9dcbb3891e6a2f8a1}} 
+\index{shot@{shot}!getpos@{getpos}}
+\index{getpos@{getpos}!shot@{shot}}
+\doxysubsubsection{\texorpdfstring{getpos()}{getpos()}}
+{\footnotesize\ttfamily std\+::vector$<$sf\+::\+Vector2f$>$ shot\+::getpos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classprojectile_ad3613669ac451973d602a1c65668d14d}{projectile}}.
+
+\mbox{\Hypertarget{classshot_a350833e33f4ff6005c4a5cccf148345d}\label{classshot_a350833e33f4ff6005c4a5cccf148345d}} 
+\index{shot@{shot}!init@{init}}
+\index{init@{init}!shot@{shot}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void shot\+::init (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{pos,  }\item[{sf\+::\+Vector2f}]{vel,  }\item[{sf\+::\+Vector2f}]{accln,  }\item[{float}]{blast\+\_\+r,  }\item[{float}]{dmg,  }\item[{int}]{no = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classprojectile_a8145ff29ab7091665336eb93c1da44c1}{projectile}}.
+
+\mbox{\Hypertarget{classshot_ad687d7ee95392f1cd76e4167a0e55780}\label{classshot_ad687d7ee95392f1cd76e4167a0e55780}} 
+\index{shot@{shot}!make@{make}}
+\index{make@{make}!shot@{shot}}
+\doxysubsubsection{\texorpdfstring{make()}{make()}}
+{\footnotesize\ttfamily void shot\+::make (\begin{DoxyParamCaption}\item[{float}]{dt,  }\item[{float}]{multiplier,  }\item[{\mbox{\hyperlink{classterrain}{terrain}} \&}]{t,  }\item[{\mbox{\hyperlink{class_tank}{Tank}} \&}]{tank,  }\item[{\mbox{\hyperlink{class_tank}{Tank}} \&}]{tank1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classprojectile_a94c39cd8b4b2228b3ece9aae03830ea3}{projectile}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classshot_a5601e2d9b5b1975244730ed0f9a8c94a}\label{classshot_a5601e2d9b5b1975244730ed0f9a8c94a}} 
+\index{shot@{shot}!is\_powerful@{is\_powerful}}
+\index{is\_powerful@{is\_powerful}!shot@{shot}}
+\doxysubsubsection{\texorpdfstring{is\_powerful}{is\_powerful}}
+{\footnotesize\ttfamily bool shot\+::is\+\_\+powerful}
+

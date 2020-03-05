@@ -1,0 +1,25 @@
+var annotated_dup =
+[
+    [ "arrow", "classarrow.html", "classarrow" ],
+    [ "contactlistener", "classcontactlistener.html", "classcontactlistener" ],
+    [ "EndGameState", "class_end_game_state.html", "class_end_game_state" ],
+    [ "Game", "class_game.html", "class_game" ],
+    [ "GameState", "class_game_state.html", "class_game_state" ],
+    [ "HUD", "class_h_u_d.html", "class_h_u_d" ],
+    [ "intersect_data", "structintersect__data.html", "structintersect__data" ],
+    [ "MenuState", "class_menu_state.html", "class_menu_state" ],
+    [ "musicManager", "classmusic_manager.html", "classmusic_manager" ],
+    [ "particle", "structparticle.html", "structparticle" ],
+    [ "PauseState", "class_pause_state.html", "class_pause_state" ],
+    [ "Player", "class_player.html", "class_player" ],
+    [ "projectile", "classprojectile.html", "classprojectile" ],
+    [ "ResourceManager", "class_resource_manager.html", "class_resource_manager" ],
+    [ "scatter", "classscatter.html", "classscatter" ],
+    [ "sftank", "structsftank.html", "structsftank" ],
+    [ "shot", "classshot.html", "classshot" ],
+    [ "SplashState", "class_splash_state.html", "class_splash_state" ],
+    [ "State", "class_state.html", "class_state" ],
+    [ "Tank", "class_tank.html", "class_tank" ],
+    [ "terrain", "classterrain.html", "classterrain" ],
+    [ "vertexarray", "classvertexarray.html", "classvertexarray" ]
+];

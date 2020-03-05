@@ -1,0 +1,269 @@
+\hypertarget{class_tank}{}\doxysection{Tank Class Reference}
+\label{class_tank}\index{Tank@{Tank}}
+
+
+{\ttfamily \#include $<$Tank.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_tank_ae8be1e2c9376c3a4590b4bf689eaed76}{Tank}} ()
+\item 
+\mbox{\hyperlink{class_tank_a35c1402817a5281d3c87af2a1ee7102c}{Tank}} (b2\+World \&world, b2\+Fixture\+Def \&chasisdef, b2\+Fixture\+Def \&wheeldef, float x, float y, bool flip, \mbox{\hyperlink{_resource_identifiers_8h_a16a22d6e4ca029320bcfcb1cf85bb7fd}{texture\+Manager}} \&textures)
+\item 
+void \mbox{\hyperlink{class_tank_a9e36d49319d4c4f16ac1243380494c9a}{setup}} (b2\+World \&world, b2\+Fixture\+Def \&chasisdef, b2\+Fixture\+Def \&wheeldef, float x, float y, bool flip, \mbox{\hyperlink{_resource_identifiers_8h_a16a22d6e4ca029320bcfcb1cf85bb7fd}{texture\+Manager}} \&textures)
+\item 
+void \mbox{\hyperlink{class_tank_a4a69f2ee2d0bf842efa4a6f7aa294cc7}{moveright}} (\mbox{\hyperlink{classterrain}{terrain}} \&t)
+\item 
+void \mbox{\hyperlink{class_tank_aba78e5dde00a798af21a2a769ecb6b07}{moveleft}} (\mbox{\hyperlink{classterrain}{terrain}} \&t)
+\item 
+void \mbox{\hyperlink{class_tank_a70e2f933761c91dc601776fe5a17d9b4}{makejoint}} (\mbox{\hyperlink{classterrain}{terrain}} \&t)
+\item 
+void \mbox{\hyperlink{class_tank_a51b4bf0453b647a855f26cfa1c423291}{stop}} (\mbox{\hyperlink{classterrain}{terrain}} \&t)
+\item 
+void \mbox{\hyperlink{class_tank_a717af38f6dd91905cce32e802e357294}{applynormalforce}} (\mbox{\hyperlink{classterrain}{terrain}} \&t)
+\item 
+void \mbox{\hyperlink{class_tank_a43701ffb466213e89bdf3e7cd29b51aa}{respawn\+\_\+\+Tank}} (bool flip)
+\item 
+void \mbox{\hyperlink{class_tank_a0ff9c96324642eb5acd438ef35e923d3}{fall\+\_\+if\+\_\+needed}} (\mbox{\hyperlink{classterrain}{terrain}} \&t)
+\item 
+b2\+Body $\ast$ \mbox{\hyperlink{class_tank_a6087cf4728d6fcd7779a7afb7c0b051b}{get\+\_\+chasis}} ()
+\item 
+b2\+Body $\ast$ \mbox{\hyperlink{class_tank_ad64a20346407971c855de17b5b893ef9}{get\+\_\+rightwheel}} ()
+\item 
+b2\+Body $\ast$ \mbox{\hyperlink{class_tank_ae2e743e6f57cf389aeb16b57f22dd236}{get\+\_\+leftwheel}} ()
+\item 
+b2\+Body $\ast$ \mbox{\hyperlink{class_tank_a105093274cce616e8d5a9b2a83d42e75}{get\+\_\+top}} ()
+\item 
+b2\+World $\ast$ \mbox{\hyperlink{class_tank_ad4d4d993cab14df2c2391f00af635efd}{get\+\_\+world}} ()
+\item 
+float $\ast$ \mbox{\hyperlink{class_tank_afec332d74f1b9d29198c23a11d8fa8e5}{get\+\_\+score}} ()
+\item 
+float $\ast$ \mbox{\hyperlink{class_tank_a453e80058f77449bfc852350b63f19fc}{get\+\_\+health}} ()
+\item 
+virtual \mbox{\hyperlink{class_tank_a345b13258c59320793726a94cc125453}{$\sim$\+Tank}} ()
+\item 
+float \mbox{\hyperlink{class_tank_af4825f164e411b410b1fc64fb744dcd6}{getlow}} (float $\ast$input, int no)
+\item 
+float \mbox{\hyperlink{class_tank_a521477c17656f8e8d6e9eabb52876a9d}{gethigh}} (float $\ast$input, int no)
+\item 
+sf\+::\+Float\+Rect \mbox{\hyperlink{class_tank_a1fd668274a0a9225401ada8a2301ae8a}{getaabb}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+b2\+Joint $\ast$ \mbox{\hyperlink{class_tank_a454307eeee2143a21bc7568a84d1612b}{left\+\_\+joint}}
+\item 
+b2\+Joint $\ast$ \mbox{\hyperlink{class_tank_a4f0543926b6da39ed6bc32ced80c9ec5}{right\+\_\+joint}}
+\item 
+b2\+Joint $\ast$ \mbox{\hyperlink{class_tank_adf815b54a4a798e47e8859b7dba8a0e8}{chasis\+\_\+joint}}
+\item 
+std\+::array$<$ b2\+Vec2, 2 $>$ \mbox{\hyperlink{class_tank_ad27aae25d7d469874bdec4c168054c1c}{right\+\_\+wheel\+\_\+contact\+\_\+point}}
+\item 
+std\+::array$<$ b2\+Vec2, 2 $>$ \mbox{\hyperlink{class_tank_a490c61a1ad30614ba7f8794f00b1d985}{left\+\_\+wheel\+\_\+contact\+\_\+point}}
+\item 
+bool \mbox{\hyperlink{class_tank_a568be7bc2cb8795eae8c8a7ea037fcb7}{right\+\_\+wheel\+\_\+contact}}
+\item 
+bool \mbox{\hyperlink{class_tank_ae67dbe9ddb115daa6354344e25fa586f}{left\+\_\+wheel\+\_\+contact}}
+\item 
+bool \mbox{\hyperlink{class_tank_ac30795a4bd0a9713fa747184082af1f4}{chasis\+\_\+contact}}
+\item 
+\mbox{\hyperlink{structsftank}{sftank}} $\ast$ \mbox{\hyperlink{class_tank_ab6cf0f36f4afdeeb466de735ddb5f4da}{sfml\+\_\+tank}}
+\item 
+int \mbox{\hyperlink{class_tank_ae02d10ef8e999d7751aa9bedf96b38f0}{test}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_tank_ae8be1e2c9376c3a4590b4bf689eaed76}\label{class_tank_ae8be1e2c9376c3a4590b4bf689eaed76}} 
+\index{Tank@{Tank}!Tank@{Tank}}
+\index{Tank@{Tank}!Tank@{Tank}}
+\doxysubsubsection{\texorpdfstring{Tank()}{Tank()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Tank\+::\+Tank (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_tank_a35c1402817a5281d3c87af2a1ee7102c}\label{class_tank_a35c1402817a5281d3c87af2a1ee7102c}} 
+\index{Tank@{Tank}!Tank@{Tank}}
+\index{Tank@{Tank}!Tank@{Tank}}
+\doxysubsubsection{\texorpdfstring{Tank()}{Tank()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Tank\+::\+Tank (\begin{DoxyParamCaption}\item[{b2\+World \&}]{world,  }\item[{b2\+Fixture\+Def \&}]{chasisdef,  }\item[{b2\+Fixture\+Def \&}]{wheeldef,  }\item[{float}]{x,  }\item[{float}]{y,  }\item[{bool}]{flip,  }\item[{\mbox{\hyperlink{_resource_identifiers_8h_a16a22d6e4ca029320bcfcb1cf85bb7fd}{texture\+Manager}} \&}]{textures }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_tank_a345b13258c59320793726a94cc125453}\label{class_tank_a345b13258c59320793726a94cc125453}} 
+\index{Tank@{Tank}!````~Tank@{$\sim$Tank}}
+\index{````~Tank@{$\sim$Tank}!Tank@{Tank}}
+\doxysubsubsection{\texorpdfstring{$\sim$Tank()}{~Tank()}}
+{\footnotesize\ttfamily virtual Tank\+::$\sim$\+Tank (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_tank_a717af38f6dd91905cce32e802e357294}\label{class_tank_a717af38f6dd91905cce32e802e357294}} 
+\index{Tank@{Tank}!applynormalforce@{applynormalforce}}
+\index{applynormalforce@{applynormalforce}!Tank@{Tank}}
+\doxysubsubsection{\texorpdfstring{applynormalforce()}{applynormalforce()}}
+{\footnotesize\ttfamily void Tank\+::applynormalforce (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classterrain}{terrain}} \&}]{t }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_tank_a0ff9c96324642eb5acd438ef35e923d3}\label{class_tank_a0ff9c96324642eb5acd438ef35e923d3}} 
+\index{Tank@{Tank}!fall\_if\_needed@{fall\_if\_needed}}
+\index{fall\_if\_needed@{fall\_if\_needed}!Tank@{Tank}}
+\doxysubsubsection{\texorpdfstring{fall\_if\_needed()}{fall\_if\_needed()}}
+{\footnotesize\ttfamily void Tank\+::fall\+\_\+if\+\_\+needed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classterrain}{terrain}} \&}]{t }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_tank_a6087cf4728d6fcd7779a7afb7c0b051b}\label{class_tank_a6087cf4728d6fcd7779a7afb7c0b051b}} 
+\index{Tank@{Tank}!get\_chasis@{get\_chasis}}
+\index{get\_chasis@{get\_chasis}!Tank@{Tank}}
+\doxysubsubsection{\texorpdfstring{get\_chasis()}{get\_chasis()}}
+{\footnotesize\ttfamily b2\+Body$\ast$ Tank\+::get\+\_\+chasis (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_tank_a453e80058f77449bfc852350b63f19fc}\label{class_tank_a453e80058f77449bfc852350b63f19fc}} 
+\index{Tank@{Tank}!get\_health@{get\_health}}
+\index{get\_health@{get\_health}!Tank@{Tank}}
+\doxysubsubsection{\texorpdfstring{get\_health()}{get\_health()}}
+{\footnotesize\ttfamily float$\ast$ Tank\+::get\+\_\+health (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_tank_ae2e743e6f57cf389aeb16b57f22dd236}\label{class_tank_ae2e743e6f57cf389aeb16b57f22dd236}} 
+\index{Tank@{Tank}!get\_leftwheel@{get\_leftwheel}}
+\index{get\_leftwheel@{get\_leftwheel}!Tank@{Tank}}
+\doxysubsubsection{\texorpdfstring{get\_leftwheel()}{get\_leftwheel()}}
+{\footnotesize\ttfamily b2\+Body$\ast$ Tank\+::get\+\_\+leftwheel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_tank_ad64a20346407971c855de17b5b893ef9}\label{class_tank_ad64a20346407971c855de17b5b893ef9}} 
+\index{Tank@{Tank}!get\_rightwheel@{get\_rightwheel}}
+\index{get\_rightwheel@{get\_rightwheel}!Tank@{Tank}}
+\doxysubsubsection{\texorpdfstring{get\_rightwheel()}{get\_rightwheel()}}
+{\footnotesize\ttfamily b2\+Body$\ast$ Tank\+::get\+\_\+rightwheel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_tank_afec332d74f1b9d29198c23a11d8fa8e5}\label{class_tank_afec332d74f1b9d29198c23a11d8fa8e5}} 
+\index{Tank@{Tank}!get\_score@{get\_score}}
+\index{get\_score@{get\_score}!Tank@{Tank}}
+\doxysubsubsection{\texorpdfstring{get\_score()}{get\_score()}}
+{\footnotesize\ttfamily float$\ast$ Tank\+::get\+\_\+score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_tank_a105093274cce616e8d5a9b2a83d42e75}\label{class_tank_a105093274cce616e8d5a9b2a83d42e75}} 
+\index{Tank@{Tank}!get\_top@{get\_top}}
+\index{get\_top@{get\_top}!Tank@{Tank}}
+\doxysubsubsection{\texorpdfstring{get\_top()}{get\_top()}}
+{\footnotesize\ttfamily b2\+Body$\ast$ Tank\+::get\+\_\+top (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_tank_ad4d4d993cab14df2c2391f00af635efd}\label{class_tank_ad4d4d993cab14df2c2391f00af635efd}} 
+\index{Tank@{Tank}!get\_world@{get\_world}}
+\index{get\_world@{get\_world}!Tank@{Tank}}
+\doxysubsubsection{\texorpdfstring{get\_world()}{get\_world()}}
+{\footnotesize\ttfamily b2\+World$\ast$ Tank\+::get\+\_\+world (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_tank_a1fd668274a0a9225401ada8a2301ae8a}\label{class_tank_a1fd668274a0a9225401ada8a2301ae8a}} 
+\index{Tank@{Tank}!getaabb@{getaabb}}
+\index{getaabb@{getaabb}!Tank@{Tank}}
+\doxysubsubsection{\texorpdfstring{getaabb()}{getaabb()}}
+{\footnotesize\ttfamily sf\+::\+Float\+Rect Tank\+::getaabb (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_tank_a521477c17656f8e8d6e9eabb52876a9d}\label{class_tank_a521477c17656f8e8d6e9eabb52876a9d}} 
+\index{Tank@{Tank}!gethigh@{gethigh}}
+\index{gethigh@{gethigh}!Tank@{Tank}}
+\doxysubsubsection{\texorpdfstring{gethigh()}{gethigh()}}
+{\footnotesize\ttfamily float Tank\+::gethigh (\begin{DoxyParamCaption}\item[{float $\ast$}]{input,  }\item[{int}]{no }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_tank_af4825f164e411b410b1fc64fb744dcd6}\label{class_tank_af4825f164e411b410b1fc64fb744dcd6}} 
+\index{Tank@{Tank}!getlow@{getlow}}
+\index{getlow@{getlow}!Tank@{Tank}}
+\doxysubsubsection{\texorpdfstring{getlow()}{getlow()}}
+{\footnotesize\ttfamily float Tank\+::getlow (\begin{DoxyParamCaption}\item[{float $\ast$}]{input,  }\item[{int}]{no }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_tank_a70e2f933761c91dc601776fe5a17d9b4}\label{class_tank_a70e2f933761c91dc601776fe5a17d9b4}} 
+\index{Tank@{Tank}!makejoint@{makejoint}}
+\index{makejoint@{makejoint}!Tank@{Tank}}
+\doxysubsubsection{\texorpdfstring{makejoint()}{makejoint()}}
+{\footnotesize\ttfamily void Tank\+::makejoint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classterrain}{terrain}} \&}]{t }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_tank_aba78e5dde00a798af21a2a769ecb6b07}\label{class_tank_aba78e5dde00a798af21a2a769ecb6b07}} 
+\index{Tank@{Tank}!moveleft@{moveleft}}
+\index{moveleft@{moveleft}!Tank@{Tank}}
+\doxysubsubsection{\texorpdfstring{moveleft()}{moveleft()}}
+{\footnotesize\ttfamily void Tank\+::moveleft (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classterrain}{terrain}} \&}]{t }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_tank_a4a69f2ee2d0bf842efa4a6f7aa294cc7}\label{class_tank_a4a69f2ee2d0bf842efa4a6f7aa294cc7}} 
+\index{Tank@{Tank}!moveright@{moveright}}
+\index{moveright@{moveright}!Tank@{Tank}}
+\doxysubsubsection{\texorpdfstring{moveright()}{moveright()}}
+{\footnotesize\ttfamily void Tank\+::moveright (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classterrain}{terrain}} \&}]{t }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_tank_a43701ffb466213e89bdf3e7cd29b51aa}\label{class_tank_a43701ffb466213e89bdf3e7cd29b51aa}} 
+\index{Tank@{Tank}!respawn\_Tank@{respawn\_Tank}}
+\index{respawn\_Tank@{respawn\_Tank}!Tank@{Tank}}
+\doxysubsubsection{\texorpdfstring{respawn\_Tank()}{respawn\_Tank()}}
+{\footnotesize\ttfamily void Tank\+::respawn\+\_\+\+Tank (\begin{DoxyParamCaption}\item[{bool}]{flip }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_tank_a9e36d49319d4c4f16ac1243380494c9a}\label{class_tank_a9e36d49319d4c4f16ac1243380494c9a}} 
+\index{Tank@{Tank}!setup@{setup}}
+\index{setup@{setup}!Tank@{Tank}}
+\doxysubsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily void Tank\+::setup (\begin{DoxyParamCaption}\item[{b2\+World \&}]{world,  }\item[{b2\+Fixture\+Def \&}]{chasisdef,  }\item[{b2\+Fixture\+Def \&}]{wheeldef,  }\item[{float}]{x,  }\item[{float}]{y,  }\item[{bool}]{flip,  }\item[{\mbox{\hyperlink{_resource_identifiers_8h_a16a22d6e4ca029320bcfcb1cf85bb7fd}{texture\+Manager}} \&}]{textures }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_tank_a51b4bf0453b647a855f26cfa1c423291}\label{class_tank_a51b4bf0453b647a855f26cfa1c423291}} 
+\index{Tank@{Tank}!stop@{stop}}
+\index{stop@{stop}!Tank@{Tank}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void Tank\+::stop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classterrain}{terrain}} \&}]{t }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_tank_ac30795a4bd0a9713fa747184082af1f4}\label{class_tank_ac30795a4bd0a9713fa747184082af1f4}} 
+\index{Tank@{Tank}!chasis\_contact@{chasis\_contact}}
+\index{chasis\_contact@{chasis\_contact}!Tank@{Tank}}
+\doxysubsubsection{\texorpdfstring{chasis\_contact}{chasis\_contact}}
+{\footnotesize\ttfamily bool Tank\+::chasis\+\_\+contact}
+
+\mbox{\Hypertarget{class_tank_adf815b54a4a798e47e8859b7dba8a0e8}\label{class_tank_adf815b54a4a798e47e8859b7dba8a0e8}} 
+\index{Tank@{Tank}!chasis\_joint@{chasis\_joint}}
+\index{chasis\_joint@{chasis\_joint}!Tank@{Tank}}
+\doxysubsubsection{\texorpdfstring{chasis\_joint}{chasis\_joint}}
+{\footnotesize\ttfamily b2\+Joint $\ast$ Tank\+::chasis\+\_\+joint}
+
+\mbox{\Hypertarget{class_tank_a454307eeee2143a21bc7568a84d1612b}\label{class_tank_a454307eeee2143a21bc7568a84d1612b}} 
+\index{Tank@{Tank}!left\_joint@{left\_joint}}
+\index{left\_joint@{left\_joint}!Tank@{Tank}}
+\doxysubsubsection{\texorpdfstring{left\_joint}{left\_joint}}
+{\footnotesize\ttfamily b2\+Joint$\ast$ Tank\+::left\+\_\+joint}
+
+\mbox{\Hypertarget{class_tank_ae67dbe9ddb115daa6354344e25fa586f}\label{class_tank_ae67dbe9ddb115daa6354344e25fa586f}} 
+\index{Tank@{Tank}!left\_wheel\_contact@{left\_wheel\_contact}}
+\index{left\_wheel\_contact@{left\_wheel\_contact}!Tank@{Tank}}
+\doxysubsubsection{\texorpdfstring{left\_wheel\_contact}{left\_wheel\_contact}}
+{\footnotesize\ttfamily bool Tank\+::left\+\_\+wheel\+\_\+contact}
+
+\mbox{\Hypertarget{class_tank_a490c61a1ad30614ba7f8794f00b1d985}\label{class_tank_a490c61a1ad30614ba7f8794f00b1d985}} 
+\index{Tank@{Tank}!left\_wheel\_contact\_point@{left\_wheel\_contact\_point}}
+\index{left\_wheel\_contact\_point@{left\_wheel\_contact\_point}!Tank@{Tank}}
+\doxysubsubsection{\texorpdfstring{left\_wheel\_contact\_point}{left\_wheel\_contact\_point}}
+{\footnotesize\ttfamily std\+::array$<$b2\+Vec2, 2$>$ Tank\+::left\+\_\+wheel\+\_\+contact\+\_\+point}
+
+\mbox{\Hypertarget{class_tank_a4f0543926b6da39ed6bc32ced80c9ec5}\label{class_tank_a4f0543926b6da39ed6bc32ced80c9ec5}} 
+\index{Tank@{Tank}!right\_joint@{right\_joint}}
+\index{right\_joint@{right\_joint}!Tank@{Tank}}
+\doxysubsubsection{\texorpdfstring{right\_joint}{right\_joint}}
+{\footnotesize\ttfamily b2\+Joint $\ast$ Tank\+::right\+\_\+joint}
+
+\mbox{\Hypertarget{class_tank_a568be7bc2cb8795eae8c8a7ea037fcb7}\label{class_tank_a568be7bc2cb8795eae8c8a7ea037fcb7}} 
+\index{Tank@{Tank}!right\_wheel\_contact@{right\_wheel\_contact}}
+\index{right\_wheel\_contact@{right\_wheel\_contact}!Tank@{Tank}}
+\doxysubsubsection{\texorpdfstring{right\_wheel\_contact}{right\_wheel\_contact}}
+{\footnotesize\ttfamily bool Tank\+::right\+\_\+wheel\+\_\+contact}
+
+\mbox{\Hypertarget{class_tank_ad27aae25d7d469874bdec4c168054c1c}\label{class_tank_ad27aae25d7d469874bdec4c168054c1c}} 
+\index{Tank@{Tank}!right\_wheel\_contact\_point@{right\_wheel\_contact\_point}}
+\index{right\_wheel\_contact\_point@{right\_wheel\_contact\_point}!Tank@{Tank}}
+\doxysubsubsection{\texorpdfstring{right\_wheel\_contact\_point}{right\_wheel\_contact\_point}}
+{\footnotesize\ttfamily std\+::array$<$b2\+Vec2, 2$>$ Tank\+::right\+\_\+wheel\+\_\+contact\+\_\+point}
+
+\mbox{\Hypertarget{class_tank_ab6cf0f36f4afdeeb466de735ddb5f4da}\label{class_tank_ab6cf0f36f4afdeeb466de735ddb5f4da}} 
+\index{Tank@{Tank}!sfml\_tank@{sfml\_tank}}
+\index{sfml\_tank@{sfml\_tank}!Tank@{Tank}}
+\doxysubsubsection{\texorpdfstring{sfml\_tank}{sfml\_tank}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structsftank}{sftank}}$\ast$ Tank\+::sfml\+\_\+tank}
+
+\mbox{\Hypertarget{class_tank_ae02d10ef8e999d7751aa9bedf96b38f0}\label{class_tank_ae02d10ef8e999d7751aa9bedf96b38f0}} 
+\index{Tank@{Tank}!test@{test}}
+\index{test@{test}!Tank@{Tank}}
+\doxysubsubsection{\texorpdfstring{test}{test}}
+{\footnotesize\ttfamily int Tank\+::test}
+

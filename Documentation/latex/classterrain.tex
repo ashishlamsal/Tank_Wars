@@ -1,0 +1,155 @@
+\hypertarget{classterrain}{}\doxysection{terrain Class Reference}
+\label{classterrain}\index{terrain@{terrain}}
+
+
+{\ttfamily \#include $<$terrain.\+h$>$}
+
+Inheritance diagram for terrain\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classterrain}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classterrain_a6e244b09e546aeca524e1c3727f15508}{distance}} (sf\+::\+Vector2f first, sf\+::\+Vector2f second)
+\item 
+\mbox{\hyperlink{classterrain_aa218b64b994cf93e6a2d3723cd5db69e}{terrain}} (std\+::vector$<$ unsigned int $>$ \&value, sf\+::\+Render\+Window \&window)
+\item 
+bool \mbox{\hyperlink{classterrain_a5207aeb8fa947d6db593f9c116b8fda5}{circle\+\_\+collides}} (sf\+::\+Circle\+Shape \&shape)
+\item 
+void \mbox{\hyperlink{classterrain_a29b29dfc794f57ec8499fde506673a94}{destroy}} (sf\+::\+Vector2f position, float radius)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structintersect__data}{intersect\+\_\+data}} $>$ \mbox{\hyperlink{classterrain_a6da4452bbbadac067c1f10de9ce50bbc}{check\+\_\+pixels\+\_\+on\+\_\+air}} ()
+\item 
+void \mbox{\hyperlink{classterrain_a7868d2fefe0336a1d0b9886590230ce7}{test}} (std\+::vector$<$ \mbox{\hyperlink{structintersect__data}{intersect\+\_\+data}} $>$ \&list)
+\item 
+bool \mbox{\hyperlink{classterrain_a1d80174871d5058df9fbbef1e9e0425d}{drop\+\_\+air\+\_\+pixel\+\_\+by\+\_\+1}} (std\+::vector$<$ \mbox{\hyperlink{structintersect__data}{intersect\+\_\+data}} $>$ \&list)
+\item 
+void \mbox{\hyperlink{classterrain_abc87995e07e6b16abfa0eb632b975ef2}{make}} ()
+\item 
+\mbox{\hyperlink{classvertexarray}{vertexarray}} \mbox{\hyperlink{classterrain_a60b5dba4246dc7868cfff6d9839f5f43}{get\+\_\+surface}} ()
+\item 
+b2\+Body $\ast$ \mbox{\hyperlink{classterrain_a73019e8649f1ce9259f5c66d85d22a78}{getchainbody}} ()
+\item 
+void \mbox{\hyperlink{classterrain_af52862ea2a43ef03cd6f3d6d4979177f}{Create\+Ground}} (b2\+World \&World)
+\item 
+void \mbox{\hyperlink{classterrain_a6926a7a3a6d5c63c4adf61fda1c8310f}{recomputechain}} (b2\+World \&world)
+\item 
+b2\+Vec2 \mbox{\hyperlink{classterrain_a49f110f7d4beef0014e0686062261882}{get\+\_\+chain\+\_\+point}} (b2\+Vec2 pos)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classterrain_a815f7c662b72bf5386771ba6c573bd53}{need\+\_\+update}}
+\item 
+bool \mbox{\hyperlink{classterrain_a127a4987e96257b80f99b7af90d5dc2e}{need\+\_\+update\+\_\+b2d}}
+\item 
+bool \mbox{\hyperlink{classterrain_ad2a4c1df6c09f724f15df594bb03574c}{already\+\_\+drawn}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classterrain_aa218b64b994cf93e6a2d3723cd5db69e}\label{classterrain_aa218b64b994cf93e6a2d3723cd5db69e}} 
+\index{terrain@{terrain}!terrain@{terrain}}
+\index{terrain@{terrain}!terrain@{terrain}}
+\doxysubsubsection{\texorpdfstring{terrain()}{terrain()}}
+{\footnotesize\ttfamily terrain\+::terrain (\begin{DoxyParamCaption}\item[{std\+::vector$<$ unsigned int $>$ \&}]{value,  }\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classterrain_a6da4452bbbadac067c1f10de9ce50bbc}\label{classterrain_a6da4452bbbadac067c1f10de9ce50bbc}} 
+\index{terrain@{terrain}!check\_pixels\_on\_air@{check\_pixels\_on\_air}}
+\index{check\_pixels\_on\_air@{check\_pixels\_on\_air}!terrain@{terrain}}
+\doxysubsubsection{\texorpdfstring{check\_pixels\_on\_air()}{check\_pixels\_on\_air()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{structintersect__data}{intersect\+\_\+data}} $>$ terrain\+::check\+\_\+pixels\+\_\+on\+\_\+air (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classterrain_a5207aeb8fa947d6db593f9c116b8fda5}\label{classterrain_a5207aeb8fa947d6db593f9c116b8fda5}} 
+\index{terrain@{terrain}!circle\_collides@{circle\_collides}}
+\index{circle\_collides@{circle\_collides}!terrain@{terrain}}
+\doxysubsubsection{\texorpdfstring{circle\_collides()}{circle\_collides()}}
+{\footnotesize\ttfamily bool terrain\+::circle\+\_\+collides (\begin{DoxyParamCaption}\item[{sf\+::\+Circle\+Shape \&}]{shape }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classterrain_af52862ea2a43ef03cd6f3d6d4979177f}\label{classterrain_af52862ea2a43ef03cd6f3d6d4979177f}} 
+\index{terrain@{terrain}!CreateGround@{CreateGround}}
+\index{CreateGround@{CreateGround}!terrain@{terrain}}
+\doxysubsubsection{\texorpdfstring{CreateGround()}{CreateGround()}}
+{\footnotesize\ttfamily void terrain\+::\+Create\+Ground (\begin{DoxyParamCaption}\item[{b2\+World \&}]{World }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classterrain_a29b29dfc794f57ec8499fde506673a94}\label{classterrain_a29b29dfc794f57ec8499fde506673a94}} 
+\index{terrain@{terrain}!destroy@{destroy}}
+\index{destroy@{destroy}!terrain@{terrain}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void terrain\+::destroy (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{position,  }\item[{float}]{radius }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classterrain_a6e244b09e546aeca524e1c3727f15508}\label{classterrain_a6e244b09e546aeca524e1c3727f15508}} 
+\index{terrain@{terrain}!distance@{distance}}
+\index{distance@{distance}!terrain@{terrain}}
+\doxysubsubsection{\texorpdfstring{distance()}{distance()}}
+{\footnotesize\ttfamily int terrain\+::distance (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{first,  }\item[{sf\+::\+Vector2f}]{second }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classterrain_a1d80174871d5058df9fbbef1e9e0425d}\label{classterrain_a1d80174871d5058df9fbbef1e9e0425d}} 
+\index{terrain@{terrain}!drop\_air\_pixel\_by\_1@{drop\_air\_pixel\_by\_1}}
+\index{drop\_air\_pixel\_by\_1@{drop\_air\_pixel\_by\_1}!terrain@{terrain}}
+\doxysubsubsection{\texorpdfstring{drop\_air\_pixel\_by\_1()}{drop\_air\_pixel\_by\_1()}}
+{\footnotesize\ttfamily bool terrain\+::drop\+\_\+air\+\_\+pixel\+\_\+by\+\_\+1 (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{structintersect__data}{intersect\+\_\+data}} $>$ \&}]{list }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classterrain_a49f110f7d4beef0014e0686062261882}\label{classterrain_a49f110f7d4beef0014e0686062261882}} 
+\index{terrain@{terrain}!get\_chain\_point@{get\_chain\_point}}
+\index{get\_chain\_point@{get\_chain\_point}!terrain@{terrain}}
+\doxysubsubsection{\texorpdfstring{get\_chain\_point()}{get\_chain\_point()}}
+{\footnotesize\ttfamily b2\+Vec2 terrain\+::get\+\_\+chain\+\_\+point (\begin{DoxyParamCaption}\item[{b2\+Vec2}]{pos }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classterrain_a60b5dba4246dc7868cfff6d9839f5f43}\label{classterrain_a60b5dba4246dc7868cfff6d9839f5f43}} 
+\index{terrain@{terrain}!get\_surface@{get\_surface}}
+\index{get\_surface@{get\_surface}!terrain@{terrain}}
+\doxysubsubsection{\texorpdfstring{get\_surface()}{get\_surface()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvertexarray}{vertexarray}} terrain\+::get\+\_\+surface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classterrain_a73019e8649f1ce9259f5c66d85d22a78}\label{classterrain_a73019e8649f1ce9259f5c66d85d22a78}} 
+\index{terrain@{terrain}!getchainbody@{getchainbody}}
+\index{getchainbody@{getchainbody}!terrain@{terrain}}
+\doxysubsubsection{\texorpdfstring{getchainbody()}{getchainbody()}}
+{\footnotesize\ttfamily b2\+Body$\ast$ terrain\+::getchainbody (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classterrain_abc87995e07e6b16abfa0eb632b975ef2}\label{classterrain_abc87995e07e6b16abfa0eb632b975ef2}} 
+\index{terrain@{terrain}!make@{make}}
+\index{make@{make}!terrain@{terrain}}
+\doxysubsubsection{\texorpdfstring{make()}{make()}}
+{\footnotesize\ttfamily void terrain\+::make (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classterrain_a6926a7a3a6d5c63c4adf61fda1c8310f}\label{classterrain_a6926a7a3a6d5c63c4adf61fda1c8310f}} 
+\index{terrain@{terrain}!recomputechain@{recomputechain}}
+\index{recomputechain@{recomputechain}!terrain@{terrain}}
+\doxysubsubsection{\texorpdfstring{recomputechain()}{recomputechain()}}
+{\footnotesize\ttfamily void terrain\+::recomputechain (\begin{DoxyParamCaption}\item[{b2\+World \&}]{world }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classterrain_a7868d2fefe0336a1d0b9886590230ce7}\label{classterrain_a7868d2fefe0336a1d0b9886590230ce7}} 
+\index{terrain@{terrain}!test@{test}}
+\index{test@{test}!terrain@{terrain}}
+\doxysubsubsection{\texorpdfstring{test()}{test()}}
+{\footnotesize\ttfamily void terrain\+::test (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{structintersect__data}{intersect\+\_\+data}} $>$ \&}]{list }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classterrain_ad2a4c1df6c09f724f15df594bb03574c}\label{classterrain_ad2a4c1df6c09f724f15df594bb03574c}} 
+\index{terrain@{terrain}!already\_drawn@{already\_drawn}}
+\index{already\_drawn@{already\_drawn}!terrain@{terrain}}
+\doxysubsubsection{\texorpdfstring{already\_drawn}{already\_drawn}}
+{\footnotesize\ttfamily bool terrain\+::already\+\_\+drawn}
+
+\mbox{\Hypertarget{classterrain_a815f7c662b72bf5386771ba6c573bd53}\label{classterrain_a815f7c662b72bf5386771ba6c573bd53}} 
+\index{terrain@{terrain}!need\_update@{need\_update}}
+\index{need\_update@{need\_update}!terrain@{terrain}}
+\doxysubsubsection{\texorpdfstring{need\_update}{need\_update}}
+{\footnotesize\ttfamily bool terrain\+::need\+\_\+update}
+
+\mbox{\Hypertarget{classterrain_a127a4987e96257b80f99b7af90d5dc2e}\label{classterrain_a127a4987e96257b80f99b7af90d5dc2e}} 
+\index{terrain@{terrain}!need\_update\_b2d@{need\_update\_b2d}}
+\index{need\_update\_b2d@{need\_update\_b2d}!terrain@{terrain}}
+\doxysubsubsection{\texorpdfstring{need\_update\_b2d}{need\_update\_b2d}}
+{\footnotesize\ttfamily bool terrain\+::need\+\_\+update\+\_\+b2d}
+

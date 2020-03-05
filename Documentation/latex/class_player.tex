@@ -1,0 +1,117 @@
+\hypertarget{class_player}{}\doxysection{Player Class Reference}
+\label{class_player}\index{Player@{Player}}
+
+
+{\ttfamily \#include $<$Player.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_af61ec50746bdbd6cbf500498f67bfc96}{Player}} (b2\+World \&world, float x, float y, bool flip, \mbox{\hyperlink{_resource_identifiers_8h_a16a22d6e4ca029320bcfcb1cf85bb7fd}{texture\+Manager}} \&textures)
+\item 
+void \mbox{\hyperlink{class_player_aec9eb9644702e921b1c0875f6ba4d4ab}{set\+\_\+power}} (float p)
+\item 
+float \mbox{\hyperlink{class_player_a9b6196758bb4bd48b9041a6878bab2f1}{get\+\_\+power}} ()
+\item 
+void \mbox{\hyperlink{class_player_ad2192e8026509d71543a088e503bc6ec}{make}} (float dt, float mul, \mbox{\hyperlink{classterrain}{terrain}} \&t, \mbox{\hyperlink{class_tank}{Tank}} \&tank2)
+\item 
+void \mbox{\hyperlink{class_player_a5dc98bda088b0e253956ef22eba154f0}{fire}} ()
+\item 
+void \mbox{\hyperlink{class_player_a70bbe0afb8ef88207288c9134ae80b6e}{draw}} (sf\+::\+Render\+Window \&window)
+\item 
+void \mbox{\hyperlink{class_player_a65fb4ccd1b432cffd1f68113cade5f14}{draw\+\_\+arrow}} (sf\+::\+Render\+Window \&window)
+\item 
+\mbox{\hyperlink{class_player_a749d2c00e1fe0f5c2746f7505a58c062}{$\sim$\+Player}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_tank}{Tank}} \mbox{\hyperlink{class_player_ad8d8f1c9b0aa5706db676353a860d86f}{tank}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{projectile_8h_ad9700e9db9d62004af4a04e4e13912c5}{Weapon}} $>$ \mbox{\hyperlink{class_player_aed600026bf032d60cdbd4db2a677861f}{armory}}
+\item 
+\mbox{\hyperlink{projectile_8h_ad9700e9db9d62004af4a04e4e13912c5}{Weapon}} $\ast$ \mbox{\hyperlink{class_player_aab5ee32bc5c996859be041132e2c3fe1}{selected\+\_\+weapon}}
+\item 
+\mbox{\hyperlink{_player_8h_a5b1b67789aa063d8891495573f38a96a}{Player\+\_\+state}} \mbox{\hyperlink{class_player_a91b091ddac4609304713e9ba5408566a}{state}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_player_af61ec50746bdbd6cbf500498f67bfc96}\label{class_player_af61ec50746bdbd6cbf500498f67bfc96}} 
+\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}}
+{\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}\item[{b2\+World \&}]{world,  }\item[{float}]{x,  }\item[{float}]{y,  }\item[{bool}]{flip,  }\item[{\mbox{\hyperlink{_resource_identifiers_8h_a16a22d6e4ca029320bcfcb1cf85bb7fd}{texture\+Manager}} \&}]{textures }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_player_a749d2c00e1fe0f5c2746f7505a58c062}\label{class_player_a749d2c00e1fe0f5c2746f7505a58c062}} 
+\index{Player@{Player}!````~Player@{$\sim$Player}}
+\index{````~Player@{$\sim$Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{$\sim$Player()}{~Player()}}
+{\footnotesize\ttfamily Player\+::$\sim$\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_player_a70bbe0afb8ef88207288c9134ae80b6e}\label{class_player_a70bbe0afb8ef88207288c9134ae80b6e}} 
+\index{Player@{Player}!draw@{draw}}
+\index{draw@{draw}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Player\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_player_a65fb4ccd1b432cffd1f68113cade5f14}\label{class_player_a65fb4ccd1b432cffd1f68113cade5f14}} 
+\index{Player@{Player}!draw\_arrow@{draw\_arrow}}
+\index{draw\_arrow@{draw\_arrow}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{draw\_arrow()}{draw\_arrow()}}
+{\footnotesize\ttfamily void Player\+::draw\+\_\+arrow (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_player_a5dc98bda088b0e253956ef22eba154f0}\label{class_player_a5dc98bda088b0e253956ef22eba154f0}} 
+\index{Player@{Player}!fire@{fire}}
+\index{fire@{fire}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{fire()}{fire()}}
+{\footnotesize\ttfamily void Player\+::fire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_player_a9b6196758bb4bd48b9041a6878bab2f1}\label{class_player_a9b6196758bb4bd48b9041a6878bab2f1}} 
+\index{Player@{Player}!get\_power@{get\_power}}
+\index{get\_power@{get\_power}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{get\_power()}{get\_power()}}
+{\footnotesize\ttfamily float Player\+::get\+\_\+power (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_player_ad2192e8026509d71543a088e503bc6ec}\label{class_player_ad2192e8026509d71543a088e503bc6ec}} 
+\index{Player@{Player}!make@{make}}
+\index{make@{make}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{make()}{make()}}
+{\footnotesize\ttfamily void Player\+::make (\begin{DoxyParamCaption}\item[{float}]{dt,  }\item[{float}]{mul,  }\item[{\mbox{\hyperlink{classterrain}{terrain}} \&}]{t,  }\item[{\mbox{\hyperlink{class_tank}{Tank}} \&}]{tank2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_player_aec9eb9644702e921b1c0875f6ba4d4ab}\label{class_player_aec9eb9644702e921b1c0875f6ba4d4ab}} 
+\index{Player@{Player}!set\_power@{set\_power}}
+\index{set\_power@{set\_power}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{set\_power()}{set\_power()}}
+{\footnotesize\ttfamily void Player\+::set\+\_\+power (\begin{DoxyParamCaption}\item[{float}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_player_aed600026bf032d60cdbd4db2a677861f}\label{class_player_aed600026bf032d60cdbd4db2a677861f}} 
+\index{Player@{Player}!armory@{armory}}
+\index{armory@{armory}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{armory}{armory}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{projectile_8h_ad9700e9db9d62004af4a04e4e13912c5}{Weapon}}$>$ Player\+::armory}
+
+\mbox{\Hypertarget{class_player_aab5ee32bc5c996859be041132e2c3fe1}\label{class_player_aab5ee32bc5c996859be041132e2c3fe1}} 
+\index{Player@{Player}!selected\_weapon@{selected\_weapon}}
+\index{selected\_weapon@{selected\_weapon}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{selected\_weapon}{selected\_weapon}}
+{\footnotesize\ttfamily \mbox{\hyperlink{projectile_8h_ad9700e9db9d62004af4a04e4e13912c5}{Weapon}}$\ast$ Player\+::selected\+\_\+weapon}
+
+\mbox{\Hypertarget{class_player_a91b091ddac4609304713e9ba5408566a}\label{class_player_a91b091ddac4609304713e9ba5408566a}} 
+\index{Player@{Player}!state@{state}}
+\index{state@{state}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_player_8h_a5b1b67789aa063d8891495573f38a96a}{Player\+\_\+state}} Player\+::state}
+
+\mbox{\Hypertarget{class_player_ad8d8f1c9b0aa5706db676353a860d86f}\label{class_player_ad8d8f1c9b0aa5706db676353a860d86f}} 
+\index{Player@{Player}!tank@{tank}}
+\index{tank@{tank}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{tank}{tank}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tank}{Tank}} Player\+::tank}
+

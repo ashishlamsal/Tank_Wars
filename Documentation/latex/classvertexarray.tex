@@ -1,0 +1,133 @@
+\hypertarget{classvertexarray}{}\doxysection{vertexarray Class Reference}
+\label{classvertexarray}\index{vertexarray@{vertexarray}}
+
+
+{\ttfamily \#include $<$vertexarray.\+h$>$}
+
+Inheritance diagram for vertexarray\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classvertexarray}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvertexarray_aaf6b5300028c09d4603a5ffa380e63a8}{vertexarray}} ()
+\item 
+\mbox{\hyperlink{classvertexarray_a49c87926e4d4f171c33045349237c5eb}{vertexarray}} (sf\+::\+Primitive\+Type type, std\+::size\+\_\+t vertex\+Count=0)
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classvertexarray_a0115d6f5274a8e0ecd33cf29830ff0bf}{get\+Vertex\+Count}} () const
+\item 
+sf\+::\+Vertex \& \mbox{\hyperlink{classvertexarray_a0aa6082fa252ea7d7848edbd03a9c840}{operator\mbox{[}$\,$\mbox{]}}} (std\+::size\+\_\+t index)
+\item 
+const sf\+::\+Vertex \& \mbox{\hyperlink{classvertexarray_a59e10fd91fcfa1286bc9e1fb4887b780}{operator\mbox{[}$\,$\mbox{]}}} (std\+::size\+\_\+t index) const
+\item 
+void \mbox{\hyperlink{classvertexarray_a301ab96643ea92db0b9ad99a139a168b}{clear}} ()
+\item 
+void \mbox{\hyperlink{classvertexarray_ade55d40407cfcd172bad8402e8c2d706}{resize}} (std\+::size\+\_\+t vertex\+Count)
+\item 
+void \mbox{\hyperlink{classvertexarray_ad3de35ad98affb8bbf8adb69295adb83}{append}} (const sf\+::\+Vertex \&vertex)
+\item 
+void \mbox{\hyperlink{classvertexarray_abf48870650f6dccab32e3827fc84d94d}{set\+Primitive\+Type}} (sf\+::\+Primitive\+Type type)
+\item 
+sf\+::\+Primitive\+Type \mbox{\hyperlink{classvertexarray_ae855c815973f298f8a81533ea851cc80}{get\+Primitive\+Type}} () const
+\item 
+sf\+::\+Float\+Rect \mbox{\hyperlink{classvertexarray_a25171389fca0c557c36c415ae8019280}{get\+Bounds}} () const
+\item 
+void \mbox{\hyperlink{classvertexarray_ad2161b3c396360c56e911b80515d59f6}{erase}} (unsigned int start, unsigned int end)
+\item 
+auto \mbox{\hyperlink{classvertexarray_a5144c5d1afad204514b32122d8cf3af2}{get\+\_\+init\+\_\+iterator}} ()
+\item 
+auto \mbox{\hyperlink{classvertexarray_a52a0708153c356eef6c4b83ccb86dfb1}{get\+\_\+end\+\_\+iterator}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvertexarray_aaf6b5300028c09d4603a5ffa380e63a8}\label{classvertexarray_aaf6b5300028c09d4603a5ffa380e63a8}} 
+\index{vertexarray@{vertexarray}!vertexarray@{vertexarray}}
+\index{vertexarray@{vertexarray}!vertexarray@{vertexarray}}
+\doxysubsubsection{\texorpdfstring{vertexarray()}{vertexarray()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily vertexarray\+::vertexarray (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classvertexarray_a49c87926e4d4f171c33045349237c5eb}\label{classvertexarray_a49c87926e4d4f171c33045349237c5eb}} 
+\index{vertexarray@{vertexarray}!vertexarray@{vertexarray}}
+\index{vertexarray@{vertexarray}!vertexarray@{vertexarray}}
+\doxysubsubsection{\texorpdfstring{vertexarray()}{vertexarray()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily vertexarray\+::vertexarray (\begin{DoxyParamCaption}\item[{sf\+::\+Primitive\+Type}]{type,  }\item[{std\+::size\+\_\+t}]{vertex\+Count = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvertexarray_ad3de35ad98affb8bbf8adb69295adb83}\label{classvertexarray_ad3de35ad98affb8bbf8adb69295adb83}} 
+\index{vertexarray@{vertexarray}!append@{append}}
+\index{append@{append}!vertexarray@{vertexarray}}
+\doxysubsubsection{\texorpdfstring{append()}{append()}}
+{\footnotesize\ttfamily void vertexarray\+::append (\begin{DoxyParamCaption}\item[{const sf\+::\+Vertex \&}]{vertex }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classvertexarray_a301ab96643ea92db0b9ad99a139a168b}\label{classvertexarray_a301ab96643ea92db0b9ad99a139a168b}} 
+\index{vertexarray@{vertexarray}!clear@{clear}}
+\index{clear@{clear}!vertexarray@{vertexarray}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void vertexarray\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classvertexarray_ad2161b3c396360c56e911b80515d59f6}\label{classvertexarray_ad2161b3c396360c56e911b80515d59f6}} 
+\index{vertexarray@{vertexarray}!erase@{erase}}
+\index{erase@{erase}!vertexarray@{vertexarray}}
+\doxysubsubsection{\texorpdfstring{erase()}{erase()}}
+{\footnotesize\ttfamily void vertexarray\+::erase (\begin{DoxyParamCaption}\item[{unsigned int}]{start,  }\item[{unsigned int}]{end }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classvertexarray_a52a0708153c356eef6c4b83ccb86dfb1}\label{classvertexarray_a52a0708153c356eef6c4b83ccb86dfb1}} 
+\index{vertexarray@{vertexarray}!get\_end\_iterator@{get\_end\_iterator}}
+\index{get\_end\_iterator@{get\_end\_iterator}!vertexarray@{vertexarray}}
+\doxysubsubsection{\texorpdfstring{get\_end\_iterator()}{get\_end\_iterator()}}
+{\footnotesize\ttfamily auto vertexarray\+::get\+\_\+end\+\_\+iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classvertexarray_a5144c5d1afad204514b32122d8cf3af2}\label{classvertexarray_a5144c5d1afad204514b32122d8cf3af2}} 
+\index{vertexarray@{vertexarray}!get\_init\_iterator@{get\_init\_iterator}}
+\index{get\_init\_iterator@{get\_init\_iterator}!vertexarray@{vertexarray}}
+\doxysubsubsection{\texorpdfstring{get\_init\_iterator()}{get\_init\_iterator()}}
+{\footnotesize\ttfamily auto vertexarray\+::get\+\_\+init\+\_\+iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classvertexarray_a25171389fca0c557c36c415ae8019280}\label{classvertexarray_a25171389fca0c557c36c415ae8019280}} 
+\index{vertexarray@{vertexarray}!getBounds@{getBounds}}
+\index{getBounds@{getBounds}!vertexarray@{vertexarray}}
+\doxysubsubsection{\texorpdfstring{getBounds()}{getBounds()}}
+{\footnotesize\ttfamily sf\+::\+Float\+Rect vertexarray\+::get\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classvertexarray_ae855c815973f298f8a81533ea851cc80}\label{classvertexarray_ae855c815973f298f8a81533ea851cc80}} 
+\index{vertexarray@{vertexarray}!getPrimitiveType@{getPrimitiveType}}
+\index{getPrimitiveType@{getPrimitiveType}!vertexarray@{vertexarray}}
+\doxysubsubsection{\texorpdfstring{getPrimitiveType()}{getPrimitiveType()}}
+{\footnotesize\ttfamily sf\+::\+Primitive\+Type vertexarray\+::get\+Primitive\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classvertexarray_a0115d6f5274a8e0ecd33cf29830ff0bf}\label{classvertexarray_a0115d6f5274a8e0ecd33cf29830ff0bf}} 
+\index{vertexarray@{vertexarray}!getVertexCount@{getVertexCount}}
+\index{getVertexCount@{getVertexCount}!vertexarray@{vertexarray}}
+\doxysubsubsection{\texorpdfstring{getVertexCount()}{getVertexCount()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t vertexarray\+::get\+Vertex\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classvertexarray_a0aa6082fa252ea7d7848edbd03a9c840}\label{classvertexarray_a0aa6082fa252ea7d7848edbd03a9c840}} 
+\index{vertexarray@{vertexarray}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!vertexarray@{vertexarray}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily sf\+::\+Vertex \& vertexarray\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classvertexarray_a59e10fd91fcfa1286bc9e1fb4887b780}\label{classvertexarray_a59e10fd91fcfa1286bc9e1fb4887b780}} 
+\index{vertexarray@{vertexarray}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!vertexarray@{vertexarray}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const sf\+::\+Vertex \& vertexarray\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{index }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classvertexarray_ade55d40407cfcd172bad8402e8c2d706}\label{classvertexarray_ade55d40407cfcd172bad8402e8c2d706}} 
+\index{vertexarray@{vertexarray}!resize@{resize}}
+\index{resize@{resize}!vertexarray@{vertexarray}}
+\doxysubsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily void vertexarray\+::resize (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{vertex\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classvertexarray_abf48870650f6dccab32e3827fc84d94d}\label{classvertexarray_abf48870650f6dccab32e3827fc84d94d}} 
+\index{vertexarray@{vertexarray}!setPrimitiveType@{setPrimitiveType}}
+\index{setPrimitiveType@{setPrimitiveType}!vertexarray@{vertexarray}}
+\doxysubsubsection{\texorpdfstring{setPrimitiveType()}{setPrimitiveType()}}
+{\footnotesize\ttfamily void vertexarray\+::set\+Primitive\+Type (\begin{DoxyParamCaption}\item[{sf\+::\+Primitive\+Type}]{type }\end{DoxyParamCaption})}
+

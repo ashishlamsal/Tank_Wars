@@ -1,0 +1,78 @@
+\hypertarget{classscatter}{}\doxysection{scatter Class Reference}
+\label{classscatter}\index{scatter@{scatter}}
+
+
+{\ttfamily \#include $<$weaponsfile.\+h$>$}
+
+Inheritance diagram for scatter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classscatter}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ sf\+::\+Vector2f $>$ \mbox{\hyperlink{classscatter_ab790507d054853319d6e97b9aede7424}{getpos}} ()
+\item 
+void \mbox{\hyperlink{classscatter_ac33fb373ed613b4df2c5af4373bbe600}{init}} (sf\+::\+Vector2f pos, sf\+::\+Vector2f vel, sf\+::\+Vector2f accln, float blast\+\_\+r, float dmg, int no=1)
+\item 
+void \mbox{\hyperlink{classscatter_af6bc5e6bb550b5f54286ee27ca2f0455}{make}} (float dt, float multiplier, \mbox{\hyperlink{classterrain}{terrain}} \&t, \mbox{\hyperlink{class_tank}{Tank}} \&tank, \mbox{\hyperlink{class_tank}{Tank}} \&tank1)
+\item 
+void \mbox{\hyperlink{classscatter_a93763e4507d0303a0bf102a62a35cf2a}{draw}} (sf\+::\+Render\+Window \&window)
+\item 
+\mbox{\hyperlink{classscatter_a62ebf4912436119641363eb8dc9cdb3b}{$\sim$scatter}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classscatter_a62ebf4912436119641363eb8dc9cdb3b}\label{classscatter_a62ebf4912436119641363eb8dc9cdb3b}} 
+\index{scatter@{scatter}!````~scatter@{$\sim$scatter}}
+\index{````~scatter@{$\sim$scatter}!scatter@{scatter}}
+\doxysubsubsection{\texorpdfstring{$\sim$scatter()}{~scatter()}}
+{\footnotesize\ttfamily scatter\+::$\sim$scatter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classscatter_a93763e4507d0303a0bf102a62a35cf2a}\label{classscatter_a93763e4507d0303a0bf102a62a35cf2a}} 
+\index{scatter@{scatter}!draw@{draw}}
+\index{draw@{draw}!scatter@{scatter}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void scatter\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classprojectile_a30f2e3ba9668ed43f03dbb975cc3603e}{projectile}}.
+
+\mbox{\Hypertarget{classscatter_ab790507d054853319d6e97b9aede7424}\label{classscatter_ab790507d054853319d6e97b9aede7424}} 
+\index{scatter@{scatter}!getpos@{getpos}}
+\index{getpos@{getpos}!scatter@{scatter}}
+\doxysubsubsection{\texorpdfstring{getpos()}{getpos()}}
+{\footnotesize\ttfamily std\+::vector$<$sf\+::\+Vector2f$>$ scatter\+::getpos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classprojectile_ad3613669ac451973d602a1c65668d14d}{projectile}}.
+
+\mbox{\Hypertarget{classscatter_ac33fb373ed613b4df2c5af4373bbe600}\label{classscatter_ac33fb373ed613b4df2c5af4373bbe600}} 
+\index{scatter@{scatter}!init@{init}}
+\index{init@{init}!scatter@{scatter}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void scatter\+::init (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{pos,  }\item[{sf\+::\+Vector2f}]{vel,  }\item[{sf\+::\+Vector2f}]{accln,  }\item[{float}]{blast\+\_\+r,  }\item[{float}]{dmg,  }\item[{int}]{no = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classprojectile_a8145ff29ab7091665336eb93c1da44c1}{projectile}}.
+
+\mbox{\Hypertarget{classscatter_af6bc5e6bb550b5f54286ee27ca2f0455}\label{classscatter_af6bc5e6bb550b5f54286ee27ca2f0455}} 
+\index{scatter@{scatter}!make@{make}}
+\index{make@{make}!scatter@{scatter}}
+\doxysubsubsection{\texorpdfstring{make()}{make()}}
+{\footnotesize\ttfamily void scatter\+::make (\begin{DoxyParamCaption}\item[{float}]{dt,  }\item[{float}]{multiplier,  }\item[{\mbox{\hyperlink{classterrain}{terrain}} \&}]{t,  }\item[{\mbox{\hyperlink{class_tank}{Tank}} \&}]{tank,  }\item[{\mbox{\hyperlink{class_tank}{Tank}} \&}]{tank1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classprojectile_a94c39cd8b4b2228b3ece9aae03830ea3}{projectile}}.
+

@@ -1,0 +1,59 @@
+\hypertarget{_player_8h}{}\doxysection{Tank\+\_\+\+Wars/src/\+Player.h File Reference}
+\label{_player_8h}\index{Tank\_Wars/src/Player.h@{Tank\_Wars/src/Player.h}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}S\+F\+M\+L/\+Graphics.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}box2d/box2d.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Tank.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}weaponsfile.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Definitions.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Resource\+Manager.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classarrow}{arrow}}
+\item 
+class \mbox{\hyperlink{class_player}{Player}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_player_8h_a5b1b67789aa063d8891495573f38a96a}{Player\+\_\+state}} \{ \newline
+\mbox{\hyperlink{_player_8h_a5b1b67789aa063d8891495573f38a96aaec2f993aec2c27fc750119ab17b16cdb}{Player\+\_\+state\+::idle}}, 
+\mbox{\hyperlink{_player_8h_a5b1b67789aa063d8891495573f38a96aad7f3dc66b14b414c9bc30bafc4812e7c}{Player\+\_\+state\+::fired}}, 
+\mbox{\hyperlink{_player_8h_a5b1b67789aa063d8891495573f38a96aaa941d3e4f27f42c3caea44594e4e4104}{Player\+\_\+state\+::move\+\_\+right}}, 
+\mbox{\hyperlink{_player_8h_a5b1b67789aa063d8891495573f38a96aa7cc3468aa764d266c14bdadbcaf08b08}{Player\+\_\+state\+::move\+\_\+left}}, 
+\newline
+\mbox{\hyperlink{_player_8h_a5b1b67789aa063d8891495573f38a96aaefb5803993a803fe4414fa2ca001a84f}{Player\+\_\+state\+::away}}
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{_player_8h_a5b1b67789aa063d8891495573f38a96a}\label{_player_8h_a5b1b67789aa063d8891495573f38a96a}} 
+\index{Player.h@{Player.h}!Player\_state@{Player\_state}}
+\index{Player\_state@{Player\_state}!Player.h@{Player.h}}
+\doxysubsubsection{\texorpdfstring{Player\_state}{Player\_state}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_player_8h_a5b1b67789aa063d8891495573f38a96a}{Player\+\_\+state}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{idle@{idle}!Player.h@{Player.h}}\index{Player.h@{Player.h}!idle@{idle}}}\mbox{\Hypertarget{_player_8h_a5b1b67789aa063d8891495573f38a96aaec2f993aec2c27fc750119ab17b16cdb}\label{_player_8h_a5b1b67789aa063d8891495573f38a96aaec2f993aec2c27fc750119ab17b16cdb}} 
+idle&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{fired@{fired}!Player.h@{Player.h}}\index{Player.h@{Player.h}!fired@{fired}}}\mbox{\Hypertarget{_player_8h_a5b1b67789aa063d8891495573f38a96aad7f3dc66b14b414c9bc30bafc4812e7c}\label{_player_8h_a5b1b67789aa063d8891495573f38a96aad7f3dc66b14b414c9bc30bafc4812e7c}} 
+fired&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{move\_right@{move\_right}!Player.h@{Player.h}}\index{Player.h@{Player.h}!move\_right@{move\_right}}}\mbox{\Hypertarget{_player_8h_a5b1b67789aa063d8891495573f38a96aaa941d3e4f27f42c3caea44594e4e4104}\label{_player_8h_a5b1b67789aa063d8891495573f38a96aaa941d3e4f27f42c3caea44594e4e4104}} 
+move\+\_\+right&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{move\_left@{move\_left}!Player.h@{Player.h}}\index{Player.h@{Player.h}!move\_left@{move\_left}}}\mbox{\Hypertarget{_player_8h_a5b1b67789aa063d8891495573f38a96aa7cc3468aa764d266c14bdadbcaf08b08}\label{_player_8h_a5b1b67789aa063d8891495573f38a96aa7cc3468aa764d266c14bdadbcaf08b08}} 
+move\+\_\+left&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{away@{away}!Player.h@{Player.h}}\index{Player.h@{Player.h}!away@{away}}}\mbox{\Hypertarget{_player_8h_a5b1b67789aa063d8891495573f38a96aaefb5803993a803fe4414fa2ca001a84f}\label{_player_8h_a5b1b67789aa063d8891495573f38a96aaefb5803993a803fe4414fa2ca001a84f}} 
+away&\\
+\hline
+
+\end{DoxyEnumFields}

@@ -1,0 +1,60 @@
+\hypertarget{projectile_8h}{}\doxysection{Tank\+\_\+\+Wars/src/projectile.h File Reference}
+\label{projectile_8h}\index{Tank\_Wars/src/projectile.h@{Tank\_Wars/src/projectile.h}}
+{\ttfamily \#include $<$S\+F\+M\+L/\+Graphics.\+hpp$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}terrain.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structparticle}{particle}}
+\item 
+class \mbox{\hyperlink{classprojectile}{projectile}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{projectile_8h_ad9700e9db9d62004af4a04e4e13912c5}{Weapon}} \{ \newline
+\mbox{\hyperlink{projectile_8h_ad9700e9db9d62004af4a04e4e13912c5a334c4a4c42fdb79d7ebc3e73b517e6f8}{Weapon\+::none}}, 
+\mbox{\hyperlink{projectile_8h_ad9700e9db9d62004af4a04e4e13912c5a7ab20a23c6d1cf2a49d88ad2c744dfe1}{Weapon\+::single\+\_\+shot}}, 
+\mbox{\hyperlink{projectile_8h_ad9700e9db9d62004af4a04e4e13912c5a48b2079295111e3f8cbaff3961db146f}{Weapon\+::triple\+\_\+shot}}, 
+\mbox{\hyperlink{projectile_8h_ad9700e9db9d62004af4a04e4e13912c5ac055099aec43b2a169e71244bf869439}{Weapon\+::penta\+\_\+shot}}, 
+\newline
+\mbox{\hyperlink{projectile_8h_ad9700e9db9d62004af4a04e4e13912c5a16bca8f6b00b03744fb6bd66b1e98340}{Weapon\+::total\+\_\+destroy}}, 
+\mbox{\hyperlink{projectile_8h_ad9700e9db9d62004af4a04e4e13912c5a5ba5964f675e0b9331e94e35d5c293c9}{Weapon\+::scatter\+\_\+shot}}
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{projectile_8h_ad9700e9db9d62004af4a04e4e13912c5}\label{projectile_8h_ad9700e9db9d62004af4a04e4e13912c5}} 
+\index{projectile.h@{projectile.h}!Weapon@{Weapon}}
+\index{Weapon@{Weapon}!projectile.h@{projectile.h}}
+\doxysubsubsection{\texorpdfstring{Weapon}{Weapon}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{projectile_8h_ad9700e9db9d62004af4a04e4e13912c5}{Weapon}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{none@{none}!projectile.h@{projectile.h}}\index{projectile.h@{projectile.h}!none@{none}}}\mbox{\Hypertarget{projectile_8h_ad9700e9db9d62004af4a04e4e13912c5a334c4a4c42fdb79d7ebc3e73b517e6f8}\label{projectile_8h_ad9700e9db9d62004af4a04e4e13912c5a334c4a4c42fdb79d7ebc3e73b517e6f8}} 
+none&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{single\_shot@{single\_shot}!projectile.h@{projectile.h}}\index{projectile.h@{projectile.h}!single\_shot@{single\_shot}}}\mbox{\Hypertarget{projectile_8h_ad9700e9db9d62004af4a04e4e13912c5a7ab20a23c6d1cf2a49d88ad2c744dfe1}\label{projectile_8h_ad9700e9db9d62004af4a04e4e13912c5a7ab20a23c6d1cf2a49d88ad2c744dfe1}} 
+single\+\_\+shot&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{triple\_shot@{triple\_shot}!projectile.h@{projectile.h}}\index{projectile.h@{projectile.h}!triple\_shot@{triple\_shot}}}\mbox{\Hypertarget{projectile_8h_ad9700e9db9d62004af4a04e4e13912c5a48b2079295111e3f8cbaff3961db146f}\label{projectile_8h_ad9700e9db9d62004af4a04e4e13912c5a48b2079295111e3f8cbaff3961db146f}} 
+triple\+\_\+shot&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{penta\_shot@{penta\_shot}!projectile.h@{projectile.h}}\index{projectile.h@{projectile.h}!penta\_shot@{penta\_shot}}}\mbox{\Hypertarget{projectile_8h_ad9700e9db9d62004af4a04e4e13912c5ac055099aec43b2a169e71244bf869439}\label{projectile_8h_ad9700e9db9d62004af4a04e4e13912c5ac055099aec43b2a169e71244bf869439}} 
+penta\+\_\+shot&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{total\_destroy@{total\_destroy}!projectile.h@{projectile.h}}\index{projectile.h@{projectile.h}!total\_destroy@{total\_destroy}}}\mbox{\Hypertarget{projectile_8h_ad9700e9db9d62004af4a04e4e13912c5a16bca8f6b00b03744fb6bd66b1e98340}\label{projectile_8h_ad9700e9db9d62004af4a04e4e13912c5a16bca8f6b00b03744fb6bd66b1e98340}} 
+total\+\_\+destroy&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{scatter\_shot@{scatter\_shot}!projectile.h@{projectile.h}}\index{projectile.h@{projectile.h}!scatter\_shot@{scatter\_shot}}}\mbox{\Hypertarget{projectile_8h_ad9700e9db9d62004af4a04e4e13912c5a5ba5964f675e0b9331e94e35d5c293c9}\label{projectile_8h_ad9700e9db9d62004af4a04e4e13912c5a5ba5964f675e0b9331e94e35d5c293c9}} 
+scatter\+\_\+shot&\\
+\hline
+
+\end{DoxyEnumFields}

@@ -1,0 +1,208 @@
+\hypertarget{class_state}{}\doxysection{State Class Reference}
+\label{class_state}\index{State@{State}}
+
+
+{\ttfamily \#include $<$state.\+h$>$}
+
+Inheritance diagram for State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_state}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_state_a05aaa0a0e38cf8b94cc570d254338e74}{State}} (sf\+::\+Render\+Window \&window, \mbox{\hyperlink{_resource_identifiers_8h_afa8c8996632d69147ab2addbdf8165c5}{soundbuffer\+Manager}} \&sounds)
+\item 
+\mbox{\hyperlink{class_state_afab438d92b90dc18d194dbd9c9c8bab3}{$\sim$\+State}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_state_a79ac27488ccaeb5fc470c5bd0d7d29c3}{get\+Screen\+Width}} ()
+\item 
+static int \mbox{\hyperlink{class_state_aee5368f7a8b49db835f61d35da4f573d}{get\+Screen\+Height}} ()
+\item 
+static sf\+::\+Vector2f \mbox{\hyperlink{class_state_af237cba2b9ca97a1d055ddd925ce82c9}{get\+Scale\+Factors}} ()
+\item 
+static void \mbox{\hyperlink{class_state_aa210d8ccda0adab98cf93239e5c6f6c2}{set\+Screen\+Dimensions}} (sf\+::\+Vector2u Screen\+Dimensions)
+\item 
+static void \mbox{\hyperlink{class_state_a9b8f26787cadf5ef7583e1bb319633b2}{set\+Scale\+Factor}} (sf\+::\+Vector2f Scale\+Factor)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_state_aa03353d0d9848ec3da0ee4997663b841}{input}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_state_adf38cbc270a0a76fe9b4973a776adb16}{update}} (float elapsed\+Time)=0
+\item 
+virtual void \mbox{\hyperlink{class_state_aaaf0ad465818c7dc410acf6336018042}{draw}} () const =0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Render\+Window $\ast$ \mbox{\hyperlink{class_state_a1c5a4568e9e4c531d0501a0d0586106c}{m\+\_\+window}}
+\item 
+sf\+::\+Clock $\ast$ \mbox{\hyperlink{class_state_a492fd0f5a9ecd1cd8b45c95d983f0ef9}{m\+\_\+clock}}
+\item 
+sf\+::\+Sound\+Buffer \mbox{\hyperlink{class_state_a93d37d76b095262c4fdeeac300bc440e}{m\+\_\+select\+Buffer}}
+\item 
+sf\+::\+Sound\+Buffer \mbox{\hyperlink{class_state_a7b8f255b275587ae32db368c56e82f4c}{m\+\_\+click\+Buffer}}
+\item 
+sf\+::\+Sound\+Buffer \mbox{\hyperlink{class_state_a413e5a2128743d30590ac156ccf87be2}{m\+\_\+resume\+Buffer}}
+\item 
+sf\+::\+Sound \mbox{\hyperlink{class_state_aca94a300f34284aec28cb750d047c823}{m\+\_\+select}}
+\item 
+sf\+::\+Sound \mbox{\hyperlink{class_state_af6c2c0162c811316df4fcfe7d213a88e}{m\+\_\+click}}
+\item 
+sf\+::\+Sound \mbox{\hyperlink{class_state_a7265b5e09e034a12bd8e3fbfe8ad2c83}{m\+\_\+resume}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static sf\+::\+Vector2u \mbox{\hyperlink{class_state_a2ce160e076ec72a11ce96c169e98d541}{m\+\_\+screen\+Dimensions}} = sf\+::\+Vector2u(0, 0)
+\item 
+static sf\+::\+Vector2f \mbox{\hyperlink{class_state_a8ee3fa38f2a52f36b1c0be7e2ac51d55}{m\+\_\+scale\+Factor}} = sf\+::\+Vector2f(0, 0)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_state_a05aaa0a0e38cf8b94cc570d254338e74}\label{class_state_a05aaa0a0e38cf8b94cc570d254338e74}} 
+\index{State@{State}!State@{State}}
+\index{State@{State}!State@{State}}
+\doxysubsubsection{\texorpdfstring{State()}{State()}}
+{\footnotesize\ttfamily State\+::\+State (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{\mbox{\hyperlink{_resource_identifiers_8h_afa8c8996632d69147ab2addbdf8165c5}{soundbuffer\+Manager}} \&}]{sounds }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_state_afab438d92b90dc18d194dbd9c9c8bab3}\label{class_state_afab438d92b90dc18d194dbd9c9c8bab3}} 
+\index{State@{State}!````~State@{$\sim$State}}
+\index{````~State@{$\sim$State}!State@{State}}
+\doxysubsubsection{\texorpdfstring{$\sim$State()}{~State()}}
+{\footnotesize\ttfamily State\+::$\sim$\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_state_aaaf0ad465818c7dc410acf6336018042}\label{class_state_aaaf0ad465818c7dc410acf6336018042}} 
+\index{State@{State}!draw@{draw}}
+\index{draw@{draw}!State@{State}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void State\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_menu_state_a39ca0a4858bb809b10507b3fc2e32f33}{Menu\+State}}, \mbox{\hyperlink{class_game_state_a9e91078624a59e51ed3fca1361933d99}{Game\+State}}, \mbox{\hyperlink{class_end_game_state_a1a430892fafd5712e4f6382e651de384}{End\+Game\+State}}, \mbox{\hyperlink{class_pause_state_a55101be97ac426850094bd2a9f71092e}{Pause\+State}}, and \mbox{\hyperlink{class_splash_state_a6f57a16c2eddb7d11eb5fa918ed78891}{Splash\+State}}.
+
+\mbox{\Hypertarget{class_state_af237cba2b9ca97a1d055ddd925ce82c9}\label{class_state_af237cba2b9ca97a1d055ddd925ce82c9}} 
+\index{State@{State}!getScaleFactors@{getScaleFactors}}
+\index{getScaleFactors@{getScaleFactors}!State@{State}}
+\doxysubsubsection{\texorpdfstring{getScaleFactors()}{getScaleFactors()}}
+{\footnotesize\ttfamily static sf\+::\+Vector2f State\+::get\+Scale\+Factors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_state_aee5368f7a8b49db835f61d35da4f573d}\label{class_state_aee5368f7a8b49db835f61d35da4f573d}} 
+\index{State@{State}!getScreenHeight@{getScreenHeight}}
+\index{getScreenHeight@{getScreenHeight}!State@{State}}
+\doxysubsubsection{\texorpdfstring{getScreenHeight()}{getScreenHeight()}}
+{\footnotesize\ttfamily static int State\+::get\+Screen\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_state_a79ac27488ccaeb5fc470c5bd0d7d29c3}\label{class_state_a79ac27488ccaeb5fc470c5bd0d7d29c3}} 
+\index{State@{State}!getScreenWidth@{getScreenWidth}}
+\index{getScreenWidth@{getScreenWidth}!State@{State}}
+\doxysubsubsection{\texorpdfstring{getScreenWidth()}{getScreenWidth()}}
+{\footnotesize\ttfamily static int State\+::get\+Screen\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_state_aa03353d0d9848ec3da0ee4997663b841}\label{class_state_aa03353d0d9848ec3da0ee4997663b841}} 
+\index{State@{State}!input@{input}}
+\index{input@{input}!State@{State}}
+\doxysubsubsection{\texorpdfstring{input()}{input()}}
+{\footnotesize\ttfamily virtual void State\+::input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_menu_state_a439f3619c3562dc9551d722546ceb55f}{Menu\+State}}, \mbox{\hyperlink{class_game_state_ac4f4e3be8eec38af969a724f9d807109}{Game\+State}}, \mbox{\hyperlink{class_end_game_state_af737b853d03e55119d5fa6988606da04}{End\+Game\+State}}, \mbox{\hyperlink{class_pause_state_a4fb488f77b911515bd4f15401a016b85}{Pause\+State}}, and \mbox{\hyperlink{class_splash_state_a9050448c8b998e9e75def8031d89b426}{Splash\+State}}.
+
+\mbox{\Hypertarget{class_state_a9b8f26787cadf5ef7583e1bb319633b2}\label{class_state_a9b8f26787cadf5ef7583e1bb319633b2}} 
+\index{State@{State}!setScaleFactor@{setScaleFactor}}
+\index{setScaleFactor@{setScaleFactor}!State@{State}}
+\doxysubsubsection{\texorpdfstring{setScaleFactor()}{setScaleFactor()}}
+{\footnotesize\ttfamily static void State\+::set\+Scale\+Factor (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{Scale\+Factor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_state_aa210d8ccda0adab98cf93239e5c6f6c2}\label{class_state_aa210d8ccda0adab98cf93239e5c6f6c2}} 
+\index{State@{State}!setScreenDimensions@{setScreenDimensions}}
+\index{setScreenDimensions@{setScreenDimensions}!State@{State}}
+\doxysubsubsection{\texorpdfstring{setScreenDimensions()}{setScreenDimensions()}}
+{\footnotesize\ttfamily static void State\+::set\+Screen\+Dimensions (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2u}]{Screen\+Dimensions }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_state_adf38cbc270a0a76fe9b4973a776adb16}\label{class_state_adf38cbc270a0a76fe9b4973a776adb16}} 
+\index{State@{State}!update@{update}}
+\index{update@{update}!State@{State}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void State\+::update (\begin{DoxyParamCaption}\item[{float}]{elapsed\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_menu_state_acb9692b83ebc17442cfc379564ea00c8}{Menu\+State}}, \mbox{\hyperlink{class_game_state_aa2e1784a91646ebf547d4b1cc65e70b6}{Game\+State}}, \mbox{\hyperlink{class_end_game_state_ac653a3b85c1581d9bc7995a733dc0225}{End\+Game\+State}}, \mbox{\hyperlink{class_pause_state_ae66d031ffbf4038b2987ff0e12586342}{Pause\+State}}, and \mbox{\hyperlink{class_splash_state_a7f750a1c2d9bf1851d6db0fe3c09f029}{Splash\+State}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_state_af6c2c0162c811316df4fcfe7d213a88e}\label{class_state_af6c2c0162c811316df4fcfe7d213a88e}} 
+\index{State@{State}!m\_click@{m\_click}}
+\index{m\_click@{m\_click}!State@{State}}
+\doxysubsubsection{\texorpdfstring{m\_click}{m\_click}}
+{\footnotesize\ttfamily sf\+::\+Sound State\+::m\+\_\+click\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_state_a7b8f255b275587ae32db368c56e82f4c}\label{class_state_a7b8f255b275587ae32db368c56e82f4c}} 
+\index{State@{State}!m\_clickBuffer@{m\_clickBuffer}}
+\index{m\_clickBuffer@{m\_clickBuffer}!State@{State}}
+\doxysubsubsection{\texorpdfstring{m\_clickBuffer}{m\_clickBuffer}}
+{\footnotesize\ttfamily sf\+::\+Sound\+Buffer State\+::m\+\_\+click\+Buffer\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_state_a492fd0f5a9ecd1cd8b45c95d983f0ef9}\label{class_state_a492fd0f5a9ecd1cd8b45c95d983f0ef9}} 
+\index{State@{State}!m\_clock@{m\_clock}}
+\index{m\_clock@{m\_clock}!State@{State}}
+\doxysubsubsection{\texorpdfstring{m\_clock}{m\_clock}}
+{\footnotesize\ttfamily sf\+::\+Clock$\ast$ State\+::m\+\_\+clock\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_state_a7265b5e09e034a12bd8e3fbfe8ad2c83}\label{class_state_a7265b5e09e034a12bd8e3fbfe8ad2c83}} 
+\index{State@{State}!m\_resume@{m\_resume}}
+\index{m\_resume@{m\_resume}!State@{State}}
+\doxysubsubsection{\texorpdfstring{m\_resume}{m\_resume}}
+{\footnotesize\ttfamily sf\+::\+Sound State\+::m\+\_\+resume\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_state_a413e5a2128743d30590ac156ccf87be2}\label{class_state_a413e5a2128743d30590ac156ccf87be2}} 
+\index{State@{State}!m\_resumeBuffer@{m\_resumeBuffer}}
+\index{m\_resumeBuffer@{m\_resumeBuffer}!State@{State}}
+\doxysubsubsection{\texorpdfstring{m\_resumeBuffer}{m\_resumeBuffer}}
+{\footnotesize\ttfamily sf\+::\+Sound\+Buffer State\+::m\+\_\+resume\+Buffer\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_state_a8ee3fa38f2a52f36b1c0be7e2ac51d55}\label{class_state_a8ee3fa38f2a52f36b1c0be7e2ac51d55}} 
+\index{State@{State}!m\_scaleFactor@{m\_scaleFactor}}
+\index{m\_scaleFactor@{m\_scaleFactor}!State@{State}}
+\doxysubsubsection{\texorpdfstring{m\_scaleFactor}{m\_scaleFactor}}
+{\footnotesize\ttfamily sf\+::\+Vector2f State\+::m\+\_\+scale\+Factor = sf\+::\+Vector2f(0, 0)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_state_a2ce160e076ec72a11ce96c169e98d541}\label{class_state_a2ce160e076ec72a11ce96c169e98d541}} 
+\index{State@{State}!m\_screenDimensions@{m\_screenDimensions}}
+\index{m\_screenDimensions@{m\_screenDimensions}!State@{State}}
+\doxysubsubsection{\texorpdfstring{m\_screenDimensions}{m\_screenDimensions}}
+{\footnotesize\ttfamily sf\+::\+Vector2u State\+::m\+\_\+screen\+Dimensions = sf\+::\+Vector2u(0, 0)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_state_aca94a300f34284aec28cb750d047c823}\label{class_state_aca94a300f34284aec28cb750d047c823}} 
+\index{State@{State}!m\_select@{m\_select}}
+\index{m\_select@{m\_select}!State@{State}}
+\doxysubsubsection{\texorpdfstring{m\_select}{m\_select}}
+{\footnotesize\ttfamily sf\+::\+Sound State\+::m\+\_\+select\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_state_a93d37d76b095262c4fdeeac300bc440e}\label{class_state_a93d37d76b095262c4fdeeac300bc440e}} 
+\index{State@{State}!m\_selectBuffer@{m\_selectBuffer}}
+\index{m\_selectBuffer@{m\_selectBuffer}!State@{State}}
+\doxysubsubsection{\texorpdfstring{m\_selectBuffer}{m\_selectBuffer}}
+{\footnotesize\ttfamily sf\+::\+Sound\+Buffer State\+::m\+\_\+select\+Buffer\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_state_a1c5a4568e9e4c531d0501a0d0586106c}\label{class_state_a1c5a4568e9e4c531d0501a0d0586106c}} 
+\index{State@{State}!m\_window@{m\_window}}
+\index{m\_window@{m\_window}!State@{State}}
+\doxysubsubsection{\texorpdfstring{m\_window}{m\_window}}
+{\footnotesize\ttfamily sf\+::\+Render\+Window$\ast$ State\+::m\+\_\+window\hspace{0.3cm}{\ttfamily [protected]}}
+

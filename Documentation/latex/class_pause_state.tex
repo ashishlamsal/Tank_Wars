@@ -1,0 +1,109 @@
+\hypertarget{class_pause_state}{}\doxysection{Pause\+State Class Reference}
+\label{class_pause_state}\index{PauseState@{PauseState}}
+
+
+{\ttfamily \#include $<$Pause\+State.\+h$>$}
+
+Inheritance diagram for Pause\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pause_state}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pause_state_a0ed4a766815cbeb9b155c4d82cc015b9}{Pause\+State}} (sf\+::\+Render\+Window \&window, \mbox{\hyperlink{_resource_identifiers_8h_a77a39df391eda752e90667c53def9278}{font\+Manager}} \&fonts, \mbox{\hyperlink{_resource_identifiers_8h_afa8c8996632d69147ab2addbdf8165c5}{soundbuffer\+Manager}} \&sounds)
+\item 
+\mbox{\hyperlink{class_pause_state_af5d47befed16ad991bd90f219d4985c7}{$\sim$\+Pause\+State}} ()
+\item 
+void \mbox{\hyperlink{class_pause_state_a90fc60df89a0c462235058ece5d827a2}{show}} (sf\+::\+Sprite \&background)
+\item 
+void \mbox{\hyperlink{class_pause_state_a0432b7bf9c4d5ce97397bfae326b4523}{resume}} ()
+\item 
+bool \mbox{\hyperlink{class_pause_state_a6a5d66d9b6b37d4d69f07ae9c79d94ac}{quit\+Game}} ()
+\item 
+void \mbox{\hyperlink{class_pause_state_accf795913938b20d98cb5ae613ea497b}{set\+Quit\+Game}} (bool quit)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_pause_state_a4fb488f77b911515bd4f15401a016b85}{input}} ()
+\item 
+void \mbox{\hyperlink{class_pause_state_ae66d031ffbf4038b2987ff0e12586342}{update}} (float elapsed\+Time)
+\item 
+void \mbox{\hyperlink{class_pause_state_a55101be97ac426850094bd2a9f71092e}{draw}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pause_state_a0ed4a766815cbeb9b155c4d82cc015b9}\label{class_pause_state_a0ed4a766815cbeb9b155c4d82cc015b9}} 
+\index{PauseState@{PauseState}!PauseState@{PauseState}}
+\index{PauseState@{PauseState}!PauseState@{PauseState}}
+\doxysubsubsection{\texorpdfstring{PauseState()}{PauseState()}}
+{\footnotesize\ttfamily Pause\+State\+::\+Pause\+State (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{\mbox{\hyperlink{_resource_identifiers_8h_a77a39df391eda752e90667c53def9278}{font\+Manager}} \&}]{fonts,  }\item[{\mbox{\hyperlink{_resource_identifiers_8h_afa8c8996632d69147ab2addbdf8165c5}{soundbuffer\+Manager}} \&}]{sounds }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_pause_state_af5d47befed16ad991bd90f219d4985c7}\label{class_pause_state_af5d47befed16ad991bd90f219d4985c7}} 
+\index{PauseState@{PauseState}!````~PauseState@{$\sim$PauseState}}
+\index{````~PauseState@{$\sim$PauseState}!PauseState@{PauseState}}
+\doxysubsubsection{\texorpdfstring{$\sim$PauseState()}{~PauseState()}}
+{\footnotesize\ttfamily Pause\+State\+::$\sim$\+Pause\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pause_state_a55101be97ac426850094bd2a9f71092e}\label{class_pause_state_a55101be97ac426850094bd2a9f71092e}} 
+\index{PauseState@{PauseState}!draw@{draw}}
+\index{draw@{draw}!PauseState@{PauseState}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Pause\+State\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_state_aaaf0ad465818c7dc410acf6336018042}{State}}.
+
+\mbox{\Hypertarget{class_pause_state_a4fb488f77b911515bd4f15401a016b85}\label{class_pause_state_a4fb488f77b911515bd4f15401a016b85}} 
+\index{PauseState@{PauseState}!input@{input}}
+\index{input@{input}!PauseState@{PauseState}}
+\doxysubsubsection{\texorpdfstring{input()}{input()}}
+{\footnotesize\ttfamily void Pause\+State\+::input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_state_aa03353d0d9848ec3da0ee4997663b841}{State}}.
+
+\mbox{\Hypertarget{class_pause_state_a6a5d66d9b6b37d4d69f07ae9c79d94ac}\label{class_pause_state_a6a5d66d9b6b37d4d69f07ae9c79d94ac}} 
+\index{PauseState@{PauseState}!quitGame@{quitGame}}
+\index{quitGame@{quitGame}!PauseState@{PauseState}}
+\doxysubsubsection{\texorpdfstring{quitGame()}{quitGame()}}
+{\footnotesize\ttfamily bool Pause\+State\+::quit\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_pause_state_a0432b7bf9c4d5ce97397bfae326b4523}\label{class_pause_state_a0432b7bf9c4d5ce97397bfae326b4523}} 
+\index{PauseState@{PauseState}!resume@{resume}}
+\index{resume@{resume}!PauseState@{PauseState}}
+\doxysubsubsection{\texorpdfstring{resume()}{resume()}}
+{\footnotesize\ttfamily void Pause\+State\+::resume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_pause_state_accf795913938b20d98cb5ae613ea497b}\label{class_pause_state_accf795913938b20d98cb5ae613ea497b}} 
+\index{PauseState@{PauseState}!setQuitGame@{setQuitGame}}
+\index{setQuitGame@{setQuitGame}!PauseState@{PauseState}}
+\doxysubsubsection{\texorpdfstring{setQuitGame()}{setQuitGame()}}
+{\footnotesize\ttfamily void Pause\+State\+::set\+Quit\+Game (\begin{DoxyParamCaption}\item[{bool}]{quit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_pause_state_a90fc60df89a0c462235058ece5d827a2}\label{class_pause_state_a90fc60df89a0c462235058ece5d827a2}} 
+\index{PauseState@{PauseState}!show@{show}}
+\index{show@{show}!PauseState@{PauseState}}
+\doxysubsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily void Pause\+State\+::show (\begin{DoxyParamCaption}\item[{sf\+::\+Sprite \&}]{background }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_pause_state_ae66d031ffbf4038b2987ff0e12586342}\label{class_pause_state_ae66d031ffbf4038b2987ff0e12586342}} 
+\index{PauseState@{PauseState}!update@{update}}
+\index{update@{update}!PauseState@{PauseState}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Pause\+State\+::update (\begin{DoxyParamCaption}\item[{float}]{elapsed\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_state_adf38cbc270a0a76fe9b4973a776adb16}{State}}.
+
